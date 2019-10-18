@@ -1,0 +1,16 @@
+PODS:
+  - SmartmoveMobileAdsSDK (0.1.0)
+
+DEPENDENCIES:
+  - SmartmoveMobileAdsSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SmartmoveMobileAdsSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SmartmoveMobileAdsSDK: 63770bc60735f05795642ffd6decc9ea6b2f90df
+
+PODFILE CHECKSUM: fa8fea46d3dd3c46b33785bf3a5076edda0a22ba
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,22 @@
+{
+  "name": "SmartmoveMobileAdsSDK",
+  "version": "0.1.0",
+  "summary": "A short description of SmartmoveMobileAdsSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/oneweekstudio/SmartmoveMobileAdsSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "oneweekstudio": "dongnd@smartmove.com.vn"
+  },
+  "source": {
+    "git": "https://github.com/oneweekstudio/SmartmoveMobileAdsSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SmartmoveMobileAdsSDK/Classes/**/*"
+}
