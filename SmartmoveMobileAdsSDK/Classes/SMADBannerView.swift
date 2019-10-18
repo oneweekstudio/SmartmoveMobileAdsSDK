@@ -28,7 +28,7 @@ open class SMADBannerView: NSObject {
         }
     }
     
-    public var responseInfo: SMADResponse? {
+    public var responseInfo: SMADResponseInfo? {
         get {
             return nil
         }

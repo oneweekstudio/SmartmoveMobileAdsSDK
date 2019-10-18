@@ -6,11 +6,21 @@
 //
 
 import Foundation
+import Alamofire
+import MagicMapper
+import AdSupport
 
 open class SMADInterstitial: NSObject {
     
+//    weak open var delegate: SMAdInter?
+    
     public func load(_ request: SMADRequest) {
         //Code
+        var params = request.baseParam
+        params.updateValue("1", forKey: "number")
+        params.updateValue("random", forKey: "option")
+        request.urlRequest = SMADMobileAds.kSMADGetCampaign
+        request.load()
     }
     
     public func present(fromRootViewController rootViewController: UIViewController) {
@@ -29,11 +39,10 @@ open class SMADInterstitial: NSObject {
         }
     }
     
-    public var responseInfo: SMADResponse? {
+    public var responseInfo: SMADResponseInfo? {
         get {
             return nil
         }
     }
-    
     
 }

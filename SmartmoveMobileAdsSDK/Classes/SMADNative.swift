@@ -28,7 +28,7 @@ open class SMADNative {
         }
     }
     
-    public var responseInfo: SMADResponse? {
+    public var responseInfo: SMADResponseInfo? {
         get {
             return nil
         }
