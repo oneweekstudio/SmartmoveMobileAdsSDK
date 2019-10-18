@@ -6,6 +6,9 @@
 //
 
 import Foundation
-public protocol SMADRequest {
+import Alamofire
+import MagicMapper
+
+open class SMADRequest {
     
 }
