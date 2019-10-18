@@ -210,7 +210,7 @@
 		EE6A628504AEAE4293D5EA1BA2969FEC /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		F23CA21DDEB06F0FDA3507CC7C3498EA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		F80776145EDDF74DB61584ECA22B25AE /* SMADNative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMADNative.swift; path = SmartmoveMobileAdsSDK/Classes/SMADNative.swift; sourceTree = "<group>"; };
-		FA5C695E2359ABEC00B778B8 /* SMADInterstitialDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADInterstitialDelegate.swift; sourceTree = "<group>"; };
+		FA5C69602359AD9100B778B8 /* SMADInterstitialDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADInterstitialDelegate.swift; sourceTree = "<group>"; };
 		FA9CDD77FAD272A34C93715B1E11AF97 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
 		FC12DFD1C26E6548613C59AC00F13E1C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		FC2940374D8CC7C027D88BFC90BCF03B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
@@ -391,12 +391,12 @@
 		5E049B9844DC0768FE662B78D9FBEEAD /* SmartmoveMobileAdsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				FA5C695D2359ABC600B778B8 /* Protocol */,
+				FA5C695F2359AD9100B778B8 /* Protocol */,
 				A79475F02C69E70984F398E5EBF8D551 /* SMADBannerView.swift */,
 				C0FC1F83EC4ACF9067AB99AC1A75ABE6 /* SMADInterstitial.swift */,
-				F80776145EDDF74DB61584ECA22B25AE /* SMADNative.swift */,
 				2A63C5A4D06F18AA48C0953D4E2A6457 /* SMADMediation.swift */,
 				814504CC597758DF1502851F01E435CB /* SMADMobileAds.swift */,
+				F80776145EDDF74DB61584ECA22B25AE /* SMADNative.swift */,
 				652CBFB75EFE5782FF9CBE29D2037412 /* SMADRequest.swift */,
 				E7FCD6050F7AC7A41A4DE898719BDA3A /* SMADRequestError.swift */,
 				E1A9B07DDA44EDD8D2314239664A1B50 /* SMADResponseInfo.swift */,
@@ -481,10 +481,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FA5C695D2359ABC600B778B8 /* Protocol */ = {
+		FA5C695F2359AD9100B778B8 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				FA5C695E2359ABEC00B778B8 /* SMADInterstitialDelegate.swift */,
+				FA5C69602359AD9100B778B8 /* SMADInterstitialDelegate.swift */,
 			);
 			name = Protocol;
 			path = SmartmoveMobileAdsSDK/Protocol;

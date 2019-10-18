@@ -12,7 +12,7 @@ import AdSupport
 
 open class SMADInterstitial: NSObject {
     
-//    weak open var delegate: SMAdInter?
+    weak open var delegate: SMADInterstitialDelegate?
     
     public func load(_ request: SMADRequest) {
         //Code
