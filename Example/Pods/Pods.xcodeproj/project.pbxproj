@@ -12,7 +12,6 @@
 		84F54899A033BE399D26B95211978102 /* SmartmoveMobileAdsSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F92B06D8252F5C5A03E0FA5AB1D1C84 /* SmartmoveMobileAdsSDK-dummy.m */; };
 		8B573602B9EF4A1E707C1738B0C8E4A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		AA2E65F50DE3CA3BCF1BFFEB583F0920 /* Pods-SmartmoveMobileAdsSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B44A8B298D9D16242990D5AA018633 /* Pods-SmartmoveMobileAdsSDK_Example-dummy.m */; };
-		BC9EC2D4CEAA3CA6302EEC11A81E9F77 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F56A0225C7BFA9E2E32B232DAF72BB2 /* ReplaceMe.swift */; };
 		CA9630271D8D59FC8D16EBD77A6162FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E6290C12601D4E32070F9A64139270 /* SmartmoveMobileAdsSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SmartmoveMobileAdsSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		06E6290C12601D4E32070F9A64139270 /* SmartmoveMobileAdsSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SmartmoveMobileAdsSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0D452160E77AB30D71F16CD58C20A5D3 /* Pods-SmartmoveMobileAdsSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartmoveMobileAdsSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		335EE61A37E2AB006EAA214C89205F93 /* Pods-SmartmoveMobileAdsSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartmoveMobileAdsSDK_Example-Info.plist"; sourceTree = "<group>"; };
@@ -36,19 +35,29 @@
 		51EC9E5D62AE2D4E36C96642C9F1F658 /* Pods-SmartmoveMobileAdsSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartmoveMobileAdsSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		56ABE62426786D501B47E4C01FBB849C /* SmartmoveMobileAdsSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartmoveMobileAdsSDK-prefix.pch"; sourceTree = "<group>"; };
 		5CFBA837F7259FFB740F72EB5F420D7D /* SmartmoveMobileAdsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartmoveMobileAdsSDK.xcconfig; sourceTree = "<group>"; };
-		7F56A0225C7BFA9E2E32B232DAF72BB2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SmartmoveMobileAdsSDK/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		88783842571590B56FD6C203E4F4D5CB /* Pods_SmartmoveMobileAdsSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartmoveMobileAdsSDK_Example.framework; path = "Pods-SmartmoveMobileAdsSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88783842571590B56FD6C203E4F4D5CB /* Pods_SmartmoveMobileAdsSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartmoveMobileAdsSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E9C2258F82B6AA153C81CEBC1E33BF /* Pods-SmartmoveMobileAdsSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartmoveMobileAdsSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		90B37DD2E8F89096134B4B702AEA5A1E /* SmartmoveMobileAdsSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmartmoveMobileAdsSDK.modulemap; sourceTree = "<group>"; };
 		90FB1272F296016E8355BEB5903E22B6 /* SmartmoveMobileAdsSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartmoveMobileAdsSDK-umbrella.h"; sourceTree = "<group>"; };
-		99933BE38784E108264343D427FEA964 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99933BE38784E108264343D427FEA964 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB87E42D7C436AE597ABE932F939B3E /* Pods-SmartmoveMobileAdsSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartmoveMobileAdsSDK_Example.modulemap"; sourceTree = "<group>"; };
 		9F92B06D8252F5C5A03E0FA5AB1D1C84 /* SmartmoveMobileAdsSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmartmoveMobileAdsSDK-dummy.m"; sourceTree = "<group>"; };
 		A24FAC36EAC2F2793C9B8D38195265E2 /* SmartmoveMobileAdsSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmartmoveMobileAdsSDK-Info.plist"; sourceTree = "<group>"; };
-		AEEB77FFEAB8B57520562928FBD78CC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AEEB77FFEAB8B57520562928FBD78CC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DC9202F3637B15AD2698631309C0AF2A /* Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E26BD546D642D21D3F95A4CA2E89C7BB /* SmartmoveMobileAdsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmartmoveMobileAdsSDK.framework; path = SmartmoveMobileAdsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26BD546D642D21D3F95A4CA2E89C7BB /* SmartmoveMobileAdsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartmoveMobileAdsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5C6942235991EF00B778B8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FA5C6943235991EF00B778B8 /* ReplaceMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		FA5C6945235991EF00B778B8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FA5C69472359923700B778B8 /* SMADRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADRequest.swift; sourceTree = "<group>"; };
+		FA5C69482359924D00B778B8 /* SMADRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADRequestError.swift; sourceTree = "<group>"; };
+		FA5C69492359926B00B778B8 /* SMADResponseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADResponseInfo.swift; sourceTree = "<group>"; };
+		FA5C694A235992A400B778B8 /* SMADMobileAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADMobileAds.swift; sourceTree = "<group>"; };
+		FA5C694B235992C100B778B8 /* SMADInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADInterstitial.swift; sourceTree = "<group>"; };
+		FA5C694C235992D200B778B8 /* SMADBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADBannerView.swift; sourceTree = "<group>"; };
+		FA5C694D235992E100B778B8 /* SMADNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADNative.swift; sourceTree = "<group>"; };
+		FA5C694E2359930100B778B8 /* SMADMediation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADMediation.swift; sourceTree = "<group>"; };
 		FE625F1B338E9FFF4600A0621608172E /* Pods-SmartmoveMobileAdsSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartmoveMobileAdsSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +141,9 @@
 		A84B02144D27E54EDF72F4D1A5413B94 /* SmartmoveMobileAdsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7F56A0225C7BFA9E2E32B232DAF72BB2 /* ReplaceMe.swift */,
+				FA5C6944235991EF00B778B8 /* Assets */,
+				FA5C6941235991EF00B778B8 /* Classes */,
+				FA5C6946235991EF00B778B8 /* Protocol */,
 				74CC64ED97CF1FB3EC78FEF6185F4FE9 /* Pod */,
 				3778C4FF87C120EFB3838AF23195D27F /* Support Files */,
 			);
@@ -174,6 +185,41 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5C6941235991EF00B778B8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA5C6942235991EF00B778B8 /* .gitkeep */,
+				FA5C6943235991EF00B778B8 /* ReplaceMe.swift */,
+				FA5C69472359923700B778B8 /* SMADRequest.swift */,
+				FA5C69482359924D00B778B8 /* SMADRequestError.swift */,
+				FA5C69492359926B00B778B8 /* SMADResponseInfo.swift */,
+				FA5C694A235992A400B778B8 /* SMADMobileAds.swift */,
+				FA5C694B235992C100B778B8 /* SMADInterstitial.swift */,
+				FA5C694C235992D200B778B8 /* SMADBannerView.swift */,
+				FA5C694D235992E100B778B8 /* SMADNative.swift */,
+				FA5C694E2359930100B778B8 /* SMADMediation.swift */,
+			);
+			name = Classes;
+			path = SmartmoveMobileAdsSDK/Classes;
+			sourceTree = "<group>";
+		};
+		FA5C6944235991EF00B778B8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA5C6945235991EF00B778B8 /* .gitkeep */,
+			);
+			name = Assets;
+			path = SmartmoveMobileAdsSDK/Assets;
+			sourceTree = "<group>";
+		};
+		FA5C6946235991EF00B778B8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			path = SmartmoveMobileAdsSDK/Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9EC2D4CEAA3CA6302EEC11A81E9F77 /* ReplaceMe.swift in Sources */,
 				84F54899A033BE399D26B95211978102 /* SmartmoveMobileAdsSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,8 +537,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
