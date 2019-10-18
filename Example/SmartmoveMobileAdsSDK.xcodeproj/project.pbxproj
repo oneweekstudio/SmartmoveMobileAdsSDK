@@ -261,10 +261,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SmartmoveMobileAdsSDK_Example/Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SmartmoveMobileAdsSDK/SmartmoveMobileAdsSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartmoveMobileAdsSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

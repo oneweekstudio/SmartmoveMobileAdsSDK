@@ -1,15 +1,22 @@
 PODS:
-  - SmartmoveMobileAdsSDK (0.1.0)
+  - SmartmoveMobileAdsSDK (0.1.0):
+    - SwiftyBeaver
+  - SwiftyBeaver (1.8.2)
 
 DEPENDENCIES:
   - SmartmoveMobileAdsSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftyBeaver
 
 EXTERNAL SOURCES:
   SmartmoveMobileAdsSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SmartmoveMobileAdsSDK: 63770bc60735f05795642ffd6decc9ea6b2f90df
+  SmartmoveMobileAdsSDK: 1ca219af757dcfe5990037960d378f1d177a718d
+  SwiftyBeaver: aaf2ebd7dac2e952991f46a82ed24ad642867ae2
 
 PODFILE CHECKSUM: fa8fea46d3dd3c46b33785bf3a5076edda0a22ba
 

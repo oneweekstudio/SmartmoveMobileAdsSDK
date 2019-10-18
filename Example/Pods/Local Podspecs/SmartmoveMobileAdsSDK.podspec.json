@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SmartmoveMobileAdsSDK/Classes/**/*"
+  "source_files": "SmartmoveMobileAdsSDK/Classes/**/*",
+  "dependencies": {
+    "SwiftyBeaver": [
+
+    ]
+  }
 }
