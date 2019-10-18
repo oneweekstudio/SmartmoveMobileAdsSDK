@@ -18,7 +18,7 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SmartmoveMobileAdsSDK/Protocol/**/*",
+  "source_files": "SmartmoveMobileAdsSDK/**/*",
   "dependencies": {
     "SwiftyBeaver": [
 

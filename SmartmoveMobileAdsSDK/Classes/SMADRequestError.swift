@@ -6,6 +6,6 @@
 //
 
 import Foundation
-public protocol SMADRequestError {
+public class SMADRequestError {
     
 }

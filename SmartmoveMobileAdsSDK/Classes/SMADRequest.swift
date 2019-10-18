@@ -46,14 +46,16 @@ open class SMADRequest: NSObject {
             "sdk_version":"1.0"]
     }
     
-    func load() {
+    func load(completionHandler: ((Any) -> Void)? = nil , failureHandler: ((Error) -> Void)? = nil ){
         Alamofire.request(self.urlRequest, method: .get, parameters: self.baseParam)
             .responseJSON {response in
                 switch (response.result){
                 case.success(let data):
+                    completionHandler?(data)
                     break
                 case .failure(let error):
                     log.debug(error)
+                    failureHandler?(error)
                     break
                 }
         }

@@ -12,7 +12,7 @@ import AdSupport
 
 open class SMADInterstitial: NSObject {
     
-    weak open var delegate: SMADInterstitialDelegate?
+    open var delegate: SMADInterstitialDelegate?
     
     public func load(_ request: SMADRequest) {
         //Code
@@ -20,7 +20,11 @@ open class SMADInterstitial: NSObject {
         params.updateValue("1", forKey: "number")
         params.updateValue("random", forKey: "option")
         request.urlRequest = SMADMobileAds.kSMADGetCampaign
-        request.load()
+        request.load(completionHandler: { (json) in
+            //Get json
+        }) { (error) in
+            //Error
+        }
     }
     
     public func present(fromRootViewController rootViewController: UIViewController) {
@@ -41,7 +45,7 @@ open class SMADInterstitial: NSObject {
     
     public var responseInfo: SMADResponseInfo? {
         get {
-            return nil
+            return self.responseInfo
         }
     }
     

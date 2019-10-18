@@ -6,6 +6,15 @@
 //
 
 import Foundation
-@objc public protocol SMADInterstitialDelegate {
-    @objc optional func interstitialDidReceiveAd(_ ad: SMADInterstitial)
+public protocol SMADInterstitialDelegate {
+    
+    //Called when an interstitial ad request succeeded. Show it at the next transition point in your application such as when transitioning between view controllers.
+
+    func interstitialDidReceiveAd(_ ad: SMADInterstitial)
+    
+    
+    //Called when an interstitial ad request completed without an interstitial to show. This is common since interstitials are shown sparingly to users.
+
+
+    func interstitial(_ ad: SMADInterstitial, didFailToReceiveAdWithError error: SMADRequestError)
 }
