@@ -16,8 +16,7 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     
     var campaign: SMADCampaign! {
         didSet {
-            self.lblTitle.text = self.campaign.name
-            self.lblDes.text = self.campaign.desc
+            
         }
         
     }
@@ -26,9 +25,12 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     
     
     func interstitialDidReceiveAd(_ ad: SMADInterstitial) {
-        
         if let cam = ad.responseInfo?.data.first {
             self.campaign = cam
+            self.lblTitle.text = self.campaign.name
+            self.lblDes.text = self.campaign.desc
+        } else {
+            print("Error")
         }
         
         
@@ -43,7 +45,6 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Run")
-        self.load()
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,7 +53,9 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        super.viewDidAppear(animated)
+        self.load()
+
     }
     
     @IBAction
