@@ -35,7 +35,7 @@ SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
   SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
-  SmartmoveMobileAdsSDK: b1141705c9139030df8629617e3c13c283ca5b26
+  SmartmoveMobileAdsSDK: 20c2ef5da5ff143be28b29e5b1e45539d6106a81
   SwiftyBeaver: aaf2ebd7dac2e952991f46a82ed24ad642867ae2
 
 PODFILE CHECKSUM: 6b86e47a57fef2d589d73f57f9cd6a3c1dcb63e7
