@@ -38,6 +38,10 @@ TODO: Add long description of the pod here.
      'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
    }
   s.static_framework = true
+  
+  s.subspec 'Resources' do |resources|
+      resources.resource_bundle = {'SmartmoveMobileAdsSDK' => ['Resources/**/*.{png,storyboard}']}
+  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
