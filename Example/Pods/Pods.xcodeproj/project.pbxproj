@@ -70,7 +70,6 @@
 		F387AD6B3A6BD9F7713ABB7D696EDA17 /* SMADInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524C54A3C27A8A2BA33614916D758C4 /* SMADInterstitial.swift */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1A3A8CAF22F41B11CCCE5DAC543AE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8385F42B88ADE8F1E2BC24EA5C77D65 /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2ABB9076F16DF5C8B2D445424148EB /* SwiftyBeaver-dummy.m */; };
-		FAA9B374235D910400A0BEE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9B372235D909200A0BEE2 /* Images.xcassets */; };
 		FF28607E5FBCEDAA2C549E05070023B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -226,7 +225,6 @@
 		EE6A628504AEAE4293D5EA1BA2969FEC /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		F23CA21DDEB06F0FDA3507CC7C3498EA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		FA9CDD77FAD272A34C93715B1E11AF97 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
-		FAA9B372235D909200A0BEE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC12DFD1C26E6548613C59AC00F13E1C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		FC2940374D8CC7C027D88BFC90BCF03B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -449,7 +447,6 @@
 			isa = PBXGroup;
 			children = (
 				4E94A55A762842FB539CEEF8B4216D59 /* SMInterstitialViewController.storyboard */,
-				FAA9B372235D909200A0BEE2 /* Images.xcassets */,
 			);
 			name = Assets;
 			path = SmartmoveMobileAdsSDK/Assets;
@@ -778,7 +775,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A1CE2869BF02F2086F9A179E0E6CD3 /* SMInterstitialViewController.storyboard in Resources */,
-				FAA9B374235D910400A0BEE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
