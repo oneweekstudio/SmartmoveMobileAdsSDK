@@ -163,6 +163,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3269CC4B04796070089C83B2 /* [CP] Embed Pods Frameworks */,
+				B3BDCC47336453A1CF3DA3BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,19 +263,35 @@
 				"${PODS_ROOT}/Target Support Files/Pods-SmartmoveMobileAdsSDK_Example/Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicMapper/MagicMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SmartmoveMobileAdsSDK/SmartmoveMobileAdsSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartmoveMobileAdsSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartmoveMobileAdsSDK_Example/Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BDCC47336453A1CF3DA3BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartmoveMobileAdsSDK_Example/Pods-SmartmoveMobileAdsSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SmartmoveMobileAdsSDK/SmartmoveMobileAdsSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SmartmoveMobileAdsSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartmoveMobileAdsSDK_Example/Pods-SmartmoveMobileAdsSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3E79707D47CED71CD280C12 /* [CP] Check Pods Manifest.lock */ = {

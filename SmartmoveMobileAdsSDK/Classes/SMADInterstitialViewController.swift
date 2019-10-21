@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
  
-open class SMADIntersitialViewController : UIViewController {
-    
+class SMADIntersitialViewController : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

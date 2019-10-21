@@ -15,7 +15,55 @@
                     <view key="view" contentMode="scaleToFill" id="moy-CM-bZb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCh-8d-azI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9l-8Q-oov">
+                                        <rect key="frame" x="41.5" y="163.5" width="331" height="491"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq4-t7-9cJ">
+                                                <rect key="frame" x="281" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="NXx-ys-JOq"/>
+                                                    <constraint firstAttribute="width" constant="50" id="WYI-KY-Iw8"/>
+                                                </constraints>
+                                                <state key="normal" image="cancel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-Pv-fri">
+                                                <rect key="frame" x="85.5" y="425" width="160" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="5uf-uh-1Ar"/>
+                                                    <constraint firstAttribute="height" constant="50" id="t7F-gX-YsM"/>
+                                                </constraints>
+                                                <state key="normal" image="Download"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fcq-Pv-fri" secondAttribute="bottom" constant="16" id="Vk9-nw-Wbt"/>
+                                            <constraint firstAttribute="trailing" secondItem="fq4-t7-9cJ" secondAttribute="trailing" id="aSO-8g-Qch"/>
+                                            <constraint firstItem="fq4-t7-9cJ" firstAttribute="top" secondItem="P9l-8Q-oov" secondAttribute="top" id="h6l-Uz-Fzs"/>
+                                            <constraint firstItem="fcq-Pv-fri" firstAttribute="centerX" secondItem="P9l-8Q-oov" secondAttribute="centerX" id="jEz-ap-6La"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="P9l-8Q-oov" firstAttribute="width" secondItem="oCh-8d-azI" secondAttribute="width" multiplier="0.8" id="BnV-8e-c8v"/>
+                                    <constraint firstItem="P9l-8Q-oov" firstAttribute="height" secondItem="oCh-8d-azI" secondAttribute="height" multiplier="0.6" id="aAF-dO-zxE"/>
+                                    <constraint firstItem="P9l-8Q-oov" firstAttribute="centerX" secondItem="oCh-8d-azI" secondAttribute="centerX" id="mfN-pe-Rzb"/>
+                                    <constraint firstItem="P9l-8Q-oov" firstAttribute="centerY" secondItem="oCh-8d-azI" secondAttribute="centerY" id="xtJ-dE-r3N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oCh-8d-azI" firstAttribute="top" secondItem="lYH-io-Z6c" secondAttribute="top" id="30t-dO-IVf"/>
+                            <constraint firstItem="lYH-io-Z6c" firstAttribute="trailing" secondItem="oCh-8d-azI" secondAttribute="trailing" id="XeR-JU-krb"/>
+                            <constraint firstItem="oCh-8d-azI" firstAttribute="leading" secondItem="lYH-io-Z6c" secondAttribute="leading" id="Yxi-dY-Lrt"/>
+                            <constraint firstItem="lYH-io-Z6c" firstAttribute="bottom" secondItem="oCh-8d-azI" secondAttribute="bottom" id="sKO-yr-Ysn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lYH-io-Z6c"/>
                     </view>
                 </viewController>
@@ -24,4 +72,8 @@
             <point key="canvasLocation" x="-95" y="-68"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Download" width="162" height="49"/>
+        <image name="cancel" width="33" height="33"/>
+    </resources>
 </document>

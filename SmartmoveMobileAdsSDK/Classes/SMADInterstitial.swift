@@ -36,7 +36,7 @@ open class SMADInterstitial: NSObject {
     public func present(fromRootViewController rootViewController: UIViewController) {
         //Code
         let storyboard = UIStoryboard.init(name: "SMInterstitialViewController", bundle: getBundlePath())
-        let intersitialViewController =  storyboard.instantiateViewController(withIdentifier: "SMInterstitialViewController") as! SMADIntersitialViewController
+        let intersitialViewController =  storyboard.instantiateViewController(withIdentifier: "SMADIntersitialViewController") as! SMADIntersitialViewController
         intersitialViewController.modalPresentationStyle = .overCurrentContext
         intersitialViewController.hidesBottomBarWhenPushed = true
         rootViewController.present(intersitialViewController, animated: false, completion: nil)

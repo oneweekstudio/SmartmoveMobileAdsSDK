@@ -19,6 +19,12 @@
     "ios": "9.0"
   },
   "source_files": "SmartmoveMobileAdsSDK/**/*",
+  "resource_bundles": {
+    "SmartmoveMobileAdsSDK": [
+      "SmartmoveMobileAdsSDK/Assets/*"
+    ]
+  },
+  "static_framework": true,
   "dependencies": {
     "SwiftyBeaver": [
 
