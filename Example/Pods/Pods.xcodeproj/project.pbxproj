@@ -69,6 +69,10 @@
 		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23CA21DDEB06F0FDA3507CC7C3498EA /* ServerTrustPolicy.swift */; };
 		F63DCDFDBD8F66B2773CA81698AD1D50 /* SMADInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC0DD9B6A5D29FD34CCF92453DE347 /* SMADInterstitial.swift */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1A3A8CAF22F41B11CCCE5DAC543AE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAA9B366235D6CFC00A0BEE2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = FAA9B365235D6CFC00A0BEE2 /* .gitkeep */; };
+		FAA9B368235D6D1F00A0BEE2 /* SMInterstitialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9B367235D6D1F00A0BEE2 /* SMInterstitialViewController.storyboard */; };
+		FAA9B36A235D6E9300A0BEE2 /* SMADInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B369235D6E9300A0BEE2 /* SMADInterstitialViewController.swift */; };
+		FAA9B36C235D6F3800A0BEE2 /* SMADCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9B36B235D6F3800A0BEE2 /* SMADCommon.swift */; };
 		FB9E646FB7B59E005A9B7B2FF604A53A /* SMADMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58958D6E6C7472C6904628907CB98DA2 /* SMADMobileAds.swift */; };
 /* End PBXBuildFile section */
 
@@ -154,26 +158,26 @@
 		572B86545A6B9FE30141BF0266D598BF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		57FE573440C351D9A6B7F4DACBDBE530 /* SMADInterstitialDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADInterstitialDelegate.swift; sourceTree = "<group>"; };
 		58958D6E6C7472C6904628907CB98DA2 /* SMADMobileAds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADMobileAds.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6507B288065D828E881EDAEFD933E839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		70993EB476DA8D5C9BC94DAD6E7715C5 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		70CA491065080FD80529B88F4DA2D74F /* Double+Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Mappable.swift"; path = "MagicMapper/Double+Mappable.swift"; sourceTree = "<group>"; };
 		745A3F2A492AD418D09037E24A0987A7 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
-		749359F0437299D70DA65CF7E123B124 /* MagicMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MagicMapper.framework; path = MagicMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBeaver.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		749359F0437299D70DA65CF7E123B124 /* MagicMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B824434C0F9346932CFCD82C2A8AC58 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
 		7BB4275CE5B79F6EDE032246A91192F2 /* MagicMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicMapper-umbrella.h"; sourceTree = "<group>"; };
 		7BE9132F0EC0A6DE4283471B4CDE7220 /* MagicMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicMapper-dummy.m"; sourceTree = "<group>"; };
 		7D3D563591EAF231C9A27565639CF9A4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		7D70EF93FDDA2EE442F8727FFC03A0B6 /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
 		7F0B5BED78FB80B7F329855A3FC4974B /* SmartmoveMobileAdsSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartmoveMobileAdsSDK-prefix.pch"; sourceTree = "<group>"; };
-		806A7543FC9148C5A635D3FDA0279207 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		806A7543FC9148C5A635D3FDA0279207 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		844511569257BAF7A277315685C50F41 /* MagicMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845F47C66828272301231E82B74DB823 /* SMADNative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADNative.swift; sourceTree = "<group>"; };
 		850A875D083A4E10D70F4B8C1786E338 /* SmartmoveMobileAdsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartmoveMobileAdsSDK.xcconfig; sourceTree = "<group>"; };
 		870892D6F6FB7197FBB053B3D06065B0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		87ADB6349E850792A91B238111A7A14C /* MagicMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MagicMapper.modulemap; sourceTree = "<group>"; };
-		88783842571590B56FD6C203E4F4D5CB /* Pods_SmartmoveMobileAdsSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartmoveMobileAdsSDK_Example.framework; path = "Pods-SmartmoveMobileAdsSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88783842571590B56FD6C203E4F4D5CB /* Pods_SmartmoveMobileAdsSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartmoveMobileAdsSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E9C2258F82B6AA153C81CEBC1E33BF /* Pods-SmartmoveMobileAdsSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartmoveMobileAdsSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8FC19173AE46500A89536E06AFFDB729 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		92653AE04611D3CD65BF5D912E09D61C /* Bool+Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+Mappable.swift"; path = "MagicMapper/Bool+Mappable.swift"; sourceTree = "<group>"; };
@@ -181,7 +185,7 @@
 		9320C9D2149D21308EC27BB1E4770BC8 /* SMADRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADRequestError.swift; sourceTree = "<group>"; };
 		9432916E7C174E4E65CEA94E5539503E /* SMADMediation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADMediation.swift; sourceTree = "<group>"; };
 		950092372EB35A3CEDA92A89B00ED0AF /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA1A3A8CAF22F41B11CCCE5DAC543AE /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		9DB87E42D7C436AE597ABE932F939B3E /* Pods-SmartmoveMobileAdsSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartmoveMobileAdsSDK_Example.modulemap"; sourceTree = "<group>"; };
 		9E2ABB9076F16DF5C8B2D445424148EB /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
@@ -196,8 +200,8 @@
 		B61BADFC2A06343C4D2E2D2CA1084559 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C171760E2BACDEC820F5F74CF188C69E /* SmartmoveMobileAdsSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmartmoveMobileAdsSDK-Info.plist"; sourceTree = "<group>"; };
 		C2019167E0A88737A5DD5A0654DACCBA /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		C2A1CFA3B37DCDA82D727F3999A83E7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C777011D6284093CA25090BB7E76211D /* SmartmoveMobileAdsSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SmartmoveMobileAdsSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2A1CFA3B37DCDA82D727F3999A83E7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C777011D6284093CA25090BB7E76211D /* SmartmoveMobileAdsSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SmartmoveMobileAdsSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C83EB729F1E98D59AFDE26A16BABF0E6 /* MagicMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicMapper.xcconfig; sourceTree = "<group>"; };
 		CA51E6CA6475A9BB8F193DABE9615937 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		CAE96F2C62DF4E22166004EC183CF893 /* AES256CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = Sources/AES256CBC.swift; sourceTree = "<group>"; };
@@ -209,10 +213,14 @@
 		DC9202F3637B15AD2698631309C0AF2A /* Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartmoveMobileAdsSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DF784FEC32ABDB9585754F4AAB769BB5 /* FilterValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterValidator.swift; path = Sources/FilterValidator.swift; sourceTree = "<group>"; };
 		E22BFE94B086613FDB6B275ACC454384 /* SmartmoveMobileAdsSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartmoveMobileAdsSDK-umbrella.h"; sourceTree = "<group>"; };
-		E26BD546D642D21D3F95A4CA2E89C7BB /* SmartmoveMobileAdsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmartmoveMobileAdsSDK.framework; path = SmartmoveMobileAdsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26BD546D642D21D3F95A4CA2E89C7BB /* SmartmoveMobileAdsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartmoveMobileAdsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6A628504AEAE4293D5EA1BA2969FEC /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		F23CA21DDEB06F0FDA3507CC7C3498EA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		FA9CDD77FAD272A34C93715B1E11AF97 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
+		FAA9B365235D6CFC00A0BEE2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAA9B367235D6D1F00A0BEE2 /* SMInterstitialViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SMInterstitialViewController.storyboard; sourceTree = "<group>"; };
+		FAA9B369235D6E9300A0BEE2 /* SMADInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADInterstitialViewController.swift; sourceTree = "<group>"; };
+		FAA9B36B235D6F3800A0BEE2 /* SMADCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADCommon.swift; sourceTree = "<group>"; };
 		FC12DFD1C26E6548613C59AC00F13E1C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		FC2940374D8CC7C027D88BFC90BCF03B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		FE625F1B338E9FFF4600A0621608172E /* Pods-SmartmoveMobileAdsSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartmoveMobileAdsSDK_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -281,7 +289,6 @@
 				7B824434C0F9346932CFCD82C2A8AC58 /* SwiftyBeaver.swift */,
 				376FA4A369B6D136740ACA30B8F35506 /* Support Files */,
 			);
-			name = SwiftyBeaver;
 			path = SwiftyBeaver;
 			sourceTree = "<group>";
 		};
@@ -296,6 +303,8 @@
 				D450B30261926BA7D40C3A6EA4B0164D /* SMADRequest.swift */,
 				9320C9D2149D21308EC27BB1E4770BC8 /* SMADRequestError.swift */,
 				AC784E079B3EDBCA6DBDB700CB0A7B54 /* SMADResponseInfo.swift */,
+				FAA9B369235D6E9300A0BEE2 /* SMADInterstitialViewController.swift */,
+				FAA9B36B235D6F3800A0BEE2 /* SMADCommon.swift */,
 			);
 			name = Classes;
 			path = SmartmoveMobileAdsSDK/Classes;
@@ -378,7 +387,6 @@
 				35DB6D288074A92A8C3B9E2E3BA2C505 /* Validation.swift */,
 				A2C8DABC63E583FA7BBCF663E9C61BCD /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -393,6 +401,7 @@
 		4F34F3B54D7B1BEE0FED0E7E6CFFD98F /* SmartmoveMobileAdsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				FAA9B364235D6CFC00A0BEE2 /* Assets */,
 				2CBAA120F936DD3630CC9D8D0A2D4D5C /* Classes */,
 				365A043E471B1EB246045B654B9D5E8B /* Pod */,
 				349751CA991145D9FC294BEDC1199CA0 /* Protocol */,
@@ -451,7 +460,6 @@
 				D88C96CB9855B821D890946EC3398964 /* String+Mappable.swift */,
 				FEB793AE70F25A709D99165FDE6C08D5 /* Support Files */,
 			);
-			name = MagicMapper;
 			path = MagicMapper;
 			sourceTree = "<group>";
 		};
@@ -501,6 +509,16 @@
 				2522993F262CB289A10A8FDA01186E42 /* SwiftyBeaver */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAA9B364235D6CFC00A0BEE2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9B365235D6CFC00A0BEE2 /* .gitkeep */,
+				FAA9B367235D6D1F00A0BEE2 /* SMInterstitialViewController.storyboard */,
+			);
+			name = Assets;
+			path = SmartmoveMobileAdsSDK/Assets;
 			sourceTree = "<group>";
 		};
 		FEB793AE70F25A709D99165FDE6C08D5 /* Support Files */ = {
@@ -723,6 +741,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9B366235D6CFC00A0BEE2 /* .gitkeep in Resources */,
+				FAA9B368235D6D1F00A0BEE2 /* SMInterstitialViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +811,8 @@
 				9C974BBCE99CFF560EE1D92E3162001E /* SMADRequest.swift in Sources */,
 				82D2906A799AD36DE0C9FF764F73655B /* SMADRequestError.swift in Sources */,
 				941A0F544711EBF1EDDCD78BBBA90747 /* SMADResponseInfo.swift in Sources */,
+				FAA9B36C235D6F3800A0BEE2 /* SMADCommon.swift in Sources */,
+				FAA9B36A235D6E9300A0BEE2 /* SMADInterstitialViewController.swift in Sources */,
 				72D182F0CF71AE4B31B61EEBC1DBAF69 /* SmartmoveMobileAdsSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,8 +1159,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

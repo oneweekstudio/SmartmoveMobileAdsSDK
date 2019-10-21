@@ -16,5 +16,5 @@ public protocol SMADInterstitialDelegate {
     //Called when an interstitial ad request completed without an interstitial to show. This is common since interstitials are shown sparingly to users.
 
 
-    func interstitial(_ ad: SMADInterstitial, didFailToReceiveAdWithError error: SMADRequestError)
+    func interstitial(_ ad: SMADInterstitial, didFailToReceiveAdWithError error: Error)
 }

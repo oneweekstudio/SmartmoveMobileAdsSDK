@@ -22,31 +22,34 @@ open class SMADInterstitial: NSObject {
         request.urlRequest = SMADMobileAds.kSMADGetCampaign
         request.load(completionHandler: { (json) in
             //Get json
+            if let data = json as? KeyValue {
+                let response = SMADResponseInfo(data)
+                self.setResponseInfo(response)
+                self.delegate?.interstitialDidReceiveAd(self)
+            }
         }) { (error) in
             //Error
+            self.delegate?.interstitial(self, didFailToReceiveAdWithError: error)
         }
     }
     
     public func present(fromRootViewController rootViewController: UIViewController) {
         //Code
+        let storyboard = UIStoryboard.init(name: "SMInterstitialViewController", bundle: getBundlePath())
+        let intersitialViewController =  storyboard.instantiateViewController(withIdentifier: "SMInterstitialViewController") as! SMADIntersitialViewController
+        intersitialViewController.modalPresentationStyle = .overCurrentContext
+        intersitialViewController.hidesBottomBarWhenPushed = true
+        rootViewController.present(intersitialViewController, animated: false, completion: nil)
     }
     
-    public var isReady: Bool {
-        get {
-            return self.isReady
-        }
-    }
+    public var isReady: Bool = false
     
-    public var hasBeenUsed: Bool {
-        get {
-            return self.hasBeenUsed
-        }
-    }
+    public var hasBeenUsed: Bool = false
     
-    public var responseInfo: SMADResponseInfo? {
-        get {
-            return self.responseInfo
-        }
+    public var responseInfo: SMADResponseInfo?
+    
+    private func setResponseInfo(_ response: SMADResponseInfo) {
+        self.responseInfo = response
     }
     
 }

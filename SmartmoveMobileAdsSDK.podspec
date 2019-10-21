@@ -35,9 +35,12 @@ TODO: Add long description of the pod here.
   s.source_files = 'SmartmoveMobileAdsSDK/**/*'
 
 
-  # s.resource_bundles = {
-  #   'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*.png']
-  # }
+   s.resource_bundles = {
+#     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*.png']
+     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
+
+   }
+  s.static_framework = true
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
