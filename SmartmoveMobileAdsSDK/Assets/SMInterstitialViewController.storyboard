@@ -110,7 +110,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="NXx-ys-JOq"/>
                                                     <constraint firstAttribute="width" constant="50" id="WYI-KY-Iw8"/>
                                                 </constraints>
-                                                <state key="normal" image="cancel"/>
+                                                <state key="normal" image="cancel.png"/>
                                                 <connections>
                                                     <action selector="actionTapClose:" destination="zVd-jr-CFJ" eventType="touchUpInside" id="172-kO-rYq"/>
                                                 </connections>
@@ -121,7 +121,7 @@
                                                     <constraint firstAttribute="width" constant="160" id="5uf-uh-1Ar"/>
                                                     <constraint firstAttribute="height" constant="50" id="t7F-gX-YsM"/>
                                                 </constraints>
-                                                <state key="normal" image="Download"/>
+                                                <state key="normal" image="Download.png"/>
                                                 <connections>
                                                     <action selector="actionTapGetApp:" destination="zVd-jr-CFJ" eventType="touchUpInside" id="hBW-2x-rsZ"/>
                                                 </connections>
@@ -179,7 +179,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Download" width="162" height="49"/>
-        <image name="cancel" width="33" height="33"/>
+        <image name="Download.png" width="162" height="49"/>
+        <image name="cancel.png" width="33" height="33"/>
     </resources>
 </document>
