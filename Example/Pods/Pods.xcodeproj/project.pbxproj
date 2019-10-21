@@ -71,6 +71,7 @@
 		F387AD6B3A6BD9F7713ABB7D696EDA17 /* SMADInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57790793E7A0E2949DBF2F6535A7057A /* SMADInterstitial.swift */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1A3A8CAF22F41B11CCCE5DAC543AE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8385F42B88ADE8F1E2BC24EA5C77D65 /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2ABB9076F16DF5C8B2D445424148EB /* SwiftyBeaver-dummy.m */; };
+		FAA9B37A235D98BE00A0BEE2 /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAA9B379235D98BD00A0BEE2 /* Media.bundle */; };
 		FF28607E5FBCEDAA2C549E05070023B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -227,7 +228,7 @@
 		F23CA21DDEB06F0FDA3507CC7C3498EA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		F6969567F152F25920E00E3220FBFAF9 /* SmartmoveMobileAdsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartmoveMobileAdsSDK.xcconfig; sourceTree = "<group>"; };
 		FA9CDD77FAD272A34C93715B1E11AF97 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
-		FAA9B376235D941B00A0BEE2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FAA9B379235D98BD00A0BEE2 /* Media.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Media.bundle; sourceTree = "<group>"; };
 		FC12DFD1C26E6548613C59AC00F13E1C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		FC2940374D8CC7C027D88BFC90BCF03B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -422,7 +423,7 @@
 		8307623D222E1A3A2764A0C34B0FFF46 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FAA9B376235D941B00A0BEE2 /* Media.xcassets */,
+				FAA9B379235D98BD00A0BEE2 /* Media.bundle */,
 				58F380E0C83DE7D10CDE2E76FBA6CA17 /* SMInterstitialViewController.storyboard */,
 			);
 			name = Assets;
@@ -788,6 +789,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9B37A235D98BE00A0BEE2 /* Media.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
