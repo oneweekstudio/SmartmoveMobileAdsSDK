@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.9.0)
   - MagicMapper (1.0.2)
-  - SmartmoveMobileAdsSDK (0.1.0):
+  - SmartmoveMobileAdsSDK (0.1.1):
     - Alamofire
     - MagicMapper
     - SwiftyBeaver
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
-  SmartmoveMobileAdsSDK: bbe5ae20f8b1e794b9ad7607d429efae6c076d1e
+  SmartmoveMobileAdsSDK: 27194437e6e69044028738217f326f0677c97ef1
   SwiftyBeaver: aaf2ebd7dac2e952991f46a82ed24ad642867ae2
 
-PODFILE CHECKSUM: fa8fea46d3dd3c46b33785bf3a5076edda0a22ba
+PODFILE CHECKSUM: 6b86e47a57fef2d589d73f57f9cd6a3c1dcb63e7
 
 COCOAPODS: 1.8.4
