@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartmoveMobileAdsSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of SmartmoveMobileAdsSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -28,17 +28,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/oneweekstudio/SmartmoveMobileAdsSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '9.3'
 
-#  s.source_files = 'SmartmoveMobileAdsSDK/Classes/**/*'
-#  s.source_files = 'SmartmoveMobileAdsSDK/Protocol/**/*'
   s.source_files = 'SmartmoveMobileAdsSDK/**/*'
 
-
    s.resource_bundles = {
-#     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*.png']
      'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
-
    }
   s.static_framework = true
 
