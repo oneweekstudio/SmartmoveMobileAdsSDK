@@ -45,5 +45,15 @@
     "SwiftyBeaver": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "SMADResources",
+      "resource_bundles": {
+        "SmartmoveMobileAdsSDK": [
+          "SmartmoveMobileAdsSDK/**/*.{png,storyboard}"
+        ]
+      }
+    }
+  ]
 }
