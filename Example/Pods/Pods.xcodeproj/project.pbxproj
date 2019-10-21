@@ -70,7 +70,6 @@
 		F387AD6B3A6BD9F7713ABB7D696EDA17 /* SMADInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524C54A3C27A8A2BA33614916D758C4 /* SMADInterstitial.swift */; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1A3A8CAF22F41B11CCCE5DAC543AE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8385F42B88ADE8F1E2BC24EA5C77D65 /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2ABB9076F16DF5C8B2D445424148EB /* SwiftyBeaver-dummy.m */; };
-		FAA9B36E235D8D6100A0BEE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9B36D235D8D6100A0BEE2 /* Images.xcassets */; };
 		FF28607E5FBCEDAA2C549E05070023B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -785,7 +784,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA9B36E235D8D6100A0BEE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
