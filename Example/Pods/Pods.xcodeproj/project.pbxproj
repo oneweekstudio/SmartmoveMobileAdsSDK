@@ -888,7 +888,7 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9F482DBC79D53DED891824923D5E9CD8 /* Resources */ = {
+		9F482DBC79D53DED891824923D5E9CD8 /* SMADResources */ = {
 			isa = PBXGroup;
 			children = (
 				C89D8A297262A508E932171DEFFFD1E6 /* cancel.png */,
@@ -898,8 +898,8 @@
 				2044B7CBF9A9299E6093BD1ABA24ACD6 /* Download@2x.png */,
 				E4BC60BC2A9D0B1643F3D9D0DD2E3A46 /* Download@3x.png */,
 			);
-			name = Resources;
-			path = SmartmoveMobileAdsSDK/Resources;
+			name = SMADResources;
+			path = SmartmoveMobileAdsSDK/SMADResources;
 			sourceTree = "<group>";
 		};
 		A96FCE17BC9AC324C9BD0A5AFDB30979 /* MagicMapper */ = {
@@ -979,7 +979,7 @@
 				6762DC71FA9B60C1BB2CAFDFE90F239C /* Classes */,
 				73416E3977F955EB97AD8519582B9201 /* Pod */,
 				5CF662A3832F961BF6E45E5FA943CBCC /* Protocol */,
-				9F482DBC79D53DED891824923D5E9CD8 /* Resources */,
+				9F482DBC79D53DED891824923D5E9CD8 /* SMADResources */,
 				13AB25F4873BE65C61660CE7A79331EC /* Support Files */,
 			);
 			name = SmartmoveMobileAdsSDK;
