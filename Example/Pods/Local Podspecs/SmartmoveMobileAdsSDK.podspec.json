@@ -51,7 +51,7 @@
       "name": "Resources",
       "resource_bundles": {
         "SmartmoveMobileAdsSDK": [
-          "Resources/**/*.{png,storyboard}"
+          "SmartmoveMobileAdsSDK/**/*.{png,storyboard}"
         ]
       }
     }
