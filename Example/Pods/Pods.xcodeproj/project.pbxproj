@@ -193,6 +193,7 @@
 		FA1132270226AEC00FD163A760F5BFDD /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB986B9984AE96748401E213296198C /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA626556DE0DB5DBE98269492EB9D858 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E625500A6364F85F90337B334038358E /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADE8BA5235DAF4600B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
+		FADE8BA8235DB0EB00B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
 		FB3F6E73095DE433A07EF88783A929A2 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8D2638CC295F7F029864BCE6033AD /* SDWebImageDefine.m */; };
 		FC5F561CA670D699F300DDA4FE2D8314 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DF5B2E7235E71806A6A84C6245D013 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD75AA804121D91DFC1E5A2015DBD414 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F7DC3F308F2ECF78A8D53F5B9F8C05 /* SDWebImageDownloaderConfig.m */; };
@@ -1264,6 +1265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADE8BA8235DB0EB00B1747B /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
