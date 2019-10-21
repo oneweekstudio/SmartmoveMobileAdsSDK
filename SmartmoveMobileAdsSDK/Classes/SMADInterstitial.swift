@@ -57,6 +57,9 @@ open class SMADInterstitial: NSObject {
         self.responseInfo = response
         
         
+        
+        
+        
     }
     
 }
