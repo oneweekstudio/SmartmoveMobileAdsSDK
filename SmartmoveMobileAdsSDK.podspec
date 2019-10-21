@@ -32,10 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SmartmoveMobileAdsSDK/**/*'
   
-  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/**/*.xcassets' }
+#  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/**/*.xcassets' }
 
   s.resource_bundles = {
-     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
+     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/**/*']
    }
   s.static_framework = true
   
