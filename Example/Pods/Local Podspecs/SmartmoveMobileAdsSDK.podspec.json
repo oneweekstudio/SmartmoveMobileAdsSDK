@@ -19,9 +19,7 @@
     "ios": "9.3"
   },
   "source_files": "SmartmoveMobileAdsSDK/**/*",
-  "resources": [
-    "SmartmoveMobileAdsSDK/Assets/*"
-  ],
+  "resources": "SmartmoveMobileAdsSDK/Assets/*.xcassets",
   "resource_bundles": {
     "SmartmoveMobileAdsSDK": [
       "SmartmoveMobileAdsSDK/Assets/*"
