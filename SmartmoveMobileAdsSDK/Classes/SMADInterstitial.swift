@@ -50,6 +50,8 @@ open class SMADInterstitial: NSObject {
     
     private func setResponseInfo(_ response: SMADResponseInfo) {
         self.responseInfo = response
+        
+        
     }
     
 }
