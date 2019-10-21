@@ -44,7 +44,6 @@
 		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B78D08ED17FCB99D4D062173EF132 /* SessionDelegate.swift */; };
 		2E1BAD7B2D0DD5C467B0E3B7AF3182C2 /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C2B62F54C74B8B15BD834F076E3129 /* SBPlatformDestination.swift */; };
 		307674668517DC627239C5C92131D63C /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29207EFEECCADC169B07B25F8C6860CC /* SDImageAssetManager.m */; };
-		30B2B73D2D8FCC84B0EEF1F6A4C96BBE /* SMInterstitialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2819DF369619C8140601D9565DECB31F /* SMInterstitialViewController.storyboard */; };
 		31486EEF2AE7067DC3FB4C41D8B06044 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDD53FA1D2DE68007C5AAA72B70256C /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31C885C264ACBC869D0C15774FEEEE91 /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B3016BBBEC8D2513145650725B10D7 /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		32FF8DABD3E501BFB942908DCDACE39C /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E4811E361AAFD56C2B570C7117914 /* AES256CBC.swift */; };
@@ -194,8 +193,6 @@
 		FA1132270226AEC00FD163A760F5BFDD /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB986B9984AE96748401E213296198C /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA626556DE0DB5DBE98269492EB9D858 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E625500A6364F85F90337B334038358E /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADE8BA5235DAF4600B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
-		FADE8BA6235DAF4700B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
-		FADE8BA7235DAFA000B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
 		FB3F6E73095DE433A07EF88783A929A2 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8D2638CC295F7F029864BCE6033AD /* SDWebImageDefine.m */; };
 		FC5F561CA670D699F300DDA4FE2D8314 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DF5B2E7235E71806A6A84C6245D013 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD75AA804121D91DFC1E5A2015DBD414 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F7DC3F308F2ECF78A8D53F5B9F8C05 /* SDWebImageDownloaderConfig.m */; };
@@ -258,13 +255,6 @@
 			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
 			remoteInfo = SDWebImage;
 		};
-		D6C2FFB6E46AC0902E1F420DE374E202 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0503433DB96A9F39421DA54A655EFE07;
-			remoteInfo = "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK";
-		};
 		EE86E733DA2CFC69B4AE411290AE5C9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -307,7 +297,6 @@
 		289CB3062A9737280D4A7A859F8BEAA7 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		29207EFEECCADC169B07B25F8C6860CC /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
 		295311CF7176361130A51C774D6199F4 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		2A781A9FD1459317C257293357D8CB80 /* SmartmoveMobileAdsSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartmoveMobileAdsSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF285A2AE35456D84A558BC0970E00C /* MagicMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicMapper-dummy.m"; sourceTree = "<group>"; };
 		2CDEF96968C08B7C988CABD56419B39A /* SmartmoveMobileAdsSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmartmoveMobileAdsSDK-Info.plist"; sourceTree = "<group>"; };
 		2D2D9464B381EE099E5F90AA36A97465 /* Dictionary+Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Value.swift"; path = "MagicMapper/Dictionary+Value.swift"; sourceTree = "<group>"; };
@@ -502,13 +491,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01E7D063E51272FA31A559147E3DED31 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		090C1D63463ACF622287EFF9D5C9392D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,7 +834,6 @@
 				749359F0437299D70DA65CF7E123B124 /* MagicMapper.framework */,
 				88783842571590B56FD6C203E4F4D5CB /* Pods_SmartmoveMobileAdsSDK_Example.framework */,
 				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */,
-				2A781A9FD1459317C257293357D8CB80 /* SmartmoveMobileAdsSDK.bundle */,
 				E26BD546D642D21D3F95A4CA2E89C7BB /* SmartmoveMobileAdsSDK.framework */,
 				7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver.framework */,
 			);
@@ -1102,23 +1083,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0503433DB96A9F39421DA54A655EFE07 /* SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 011A2844F1F7FDAB8F4D3E0057F5D169 /* Build configuration list for PBXNativeTarget "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK" */;
-			buildPhases = (
-				866EB0A0C83B00F9098CCBE3B0431031 /* Sources */,
-				01E7D063E51272FA31A559147E3DED31 /* Frameworks */,
-				A1D5977DA3AF7FED50A0EB0B2D44F315 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK";
-			productName = "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK";
-			productReference = 2A781A9FD1459317C257293357D8CB80 /* SmartmoveMobileAdsSDK.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0C046891F182933BCF40FBB2A8CDDC3 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
@@ -1229,7 +1193,6 @@
 				AAB063D6D8ED6025E45D7E3E0495372F /* PBXTargetDependency */,
 				7E41576927F95A27CFCB95F7FEBB1AB8 /* PBXTargetDependency */,
 				4730F9BFF6FEC2278D55F7CD81439B2E /* PBXTargetDependency */,
-				AF61B53B846E9205197542A322EB0741 /* PBXTargetDependency */,
 				58860627B83DE36EC274B528078A0EFE /* PBXTargetDependency */,
 			);
 			name = SmartmoveMobileAdsSDK;
@@ -1263,7 +1226,6 @@
 				9FDA8BC84F9E701D8B335A75E390D206 /* Pods-SmartmoveMobileAdsSDK_Example */,
 				3847153A6E5EEFB86565BA840768F429 /* SDWebImage */,
 				FB1C233F279492D21EC920695A0C5D1A /* SmartmoveMobileAdsSDK */,
-				0503433DB96A9F39421DA54A655EFE07 /* SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK */,
 				1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */,
 			);
 		};
@@ -1302,7 +1264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADE8BA7235DAFA000B1747B /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1311,15 +1272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE8BA5235DAF4600B1747B /* Media.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1D5977DA3AF7FED50A0EB0B2D44F315 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FADE8BA6235DAF4700B1747B /* Media.xcassets in Resources */,
-				30B2B73D2D8FCC84B0EEF1F6A4C96BBE /* SMInterstitialViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1422,13 +1374,6 @@
 				F847FFBCD1D8D94AC91335255691154A /* UIImageView+WebCache.m in Sources */,
 				5FB34A00EC2ED9D4772F54E20E201E8B /* UIView+WebCache.m in Sources */,
 				64C5C381E1DB68622AECA8737C697856 /* UIView+WebCacheOperation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		866EB0A0C83B00F9098CCBE3B0431031 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1538,12 +1483,6 @@
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 3F163BA9CF281520450704E0155F7A42 /* PBXContainerItemProxy */;
 		};
-		AF61B53B846E9205197542A322EB0741 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK";
-			target = 0503433DB96A9F39421DA54A655EFE07 /* SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK */;
-			targetProxy = D6C2FFB6E46AC0902E1F420DE374E202 /* PBXContainerItemProxy */;
-		};
 		CA0DFF83578F05EAC38D429402A46929 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -1553,23 +1492,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2578C951B0477B4B374562CFE06E124B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6449BCA376744010ED7204F76369DA27 /* SmartmoveMobileAdsSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SmartmoveMobileAdsSDK";
-				IBSC_MODULE = SmartmoveMobileAdsSDK;
-				INFOPLIST_FILE = "Target Support Files/SmartmoveMobileAdsSDK/ResourceBundle-SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = SmartmoveMobileAdsSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		493717017E6D2EB825971316F537B90C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72D744FBB72A734F60F09732FB4602F5 /* MagicMapper.xcconfig */;
@@ -1917,23 +1839,6 @@
 			};
 			name = Debug;
 		};
-		C1415667EB3794C008A54815F2DE76F4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6449BCA376744010ED7204F76369DA27 /* SmartmoveMobileAdsSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SmartmoveMobileAdsSDK";
-				IBSC_MODULE = SmartmoveMobileAdsSDK;
-				INFOPLIST_FILE = "Target Support Files/SmartmoveMobileAdsSDK/ResourceBundle-SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = SmartmoveMobileAdsSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		DBD3E5495A1F4BD3A2E704D400512256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6449BCA376744010ED7204F76369DA27 /* SmartmoveMobileAdsSDK.xcconfig */;
@@ -2097,15 +2002,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		011A2844F1F7FDAB8F4D3E0057F5D169 /* Build configuration list for PBXNativeTarget "SmartmoveMobileAdsSDK-SmartmoveMobileAdsSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2578C951B0477B4B374562CFE06E124B /* Debug */,
-				C1415667EB3794C008A54815F2DE76F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2AE26AE30CBECB78AA003B48FDDFFAA9 /* Build configuration list for PBXNativeTarget "Pods-SmartmoveMobileAdsSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
