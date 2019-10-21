@@ -21,7 +21,8 @@
   "source_files": "SmartmoveMobileAdsSDK/**/*",
   "resource_bundles": {
     "SmartmoveMobileAdsSDK": [
-      "SmartmoveMobileAdsSDK/Assets/*"
+      "SmartmoveMobileAdsSDK/Assets/*",
+      "Pod/Assets/*.xcassets"
     ]
   },
   "static_framework": true,
