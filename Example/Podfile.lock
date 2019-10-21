@@ -1,9 +1,13 @@
 PODS:
   - Alamofire (4.9.0)
   - MagicMapper (1.0.2)
+  - SDWebImage (5.2.2):
+    - SDWebImage/Core (= 5.2.2)
+  - SDWebImage/Core (5.2.2)
   - SmartmoveMobileAdsSDK (0.1.1):
     - Alamofire
     - MagicMapper
+    - SDWebImage
     - SwiftyBeaver
   - SwiftyBeaver (1.8.2)
 
@@ -14,6 +18,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - MagicMapper
+    - SDWebImage
     - SwiftyBeaver
 
 EXTERNAL SOURCES:
@@ -23,7 +28,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
-  SmartmoveMobileAdsSDK: 84aa0aaf97b1e7b6da6ab57c341f1f82dc220ca0
+  SDWebImage: 5fcdb02cc35e05fc35791ec514b191d27189f872
+  SmartmoveMobileAdsSDK: 77b3309b8ede8bc2f1efba1028cfe7bfa7f45bdd
   SwiftyBeaver: aaf2ebd7dac2e952991f46a82ed24ad642867ae2
 
 PODFILE CHECKSUM: 6b86e47a57fef2d589d73f57f9cd6a3c1dcb63e7

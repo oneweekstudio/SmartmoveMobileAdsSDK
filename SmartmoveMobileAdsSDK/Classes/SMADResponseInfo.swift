@@ -46,6 +46,7 @@ open class SMADCampaign : NSObject, Mappable {
     public var name: String = ""
     public var assets: [SMADAsset] = []
     public var desc: String = ""
+    public var theme:String = ""
 }
 
 @objcMembers

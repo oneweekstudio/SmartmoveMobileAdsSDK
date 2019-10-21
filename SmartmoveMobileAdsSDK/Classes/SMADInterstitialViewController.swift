@@ -7,10 +7,12 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 public class SMADIntersitialViewController : UIViewController {
     
     @IBOutlet weak var imvIcon: UIImageView?
+    @IBOutlet weak var imvBackground: UIImageView?
     @IBOutlet weak var lblTitle: UILabel?
     @IBOutlet weak var lblDes: UILabel?
     
@@ -18,11 +20,12 @@ public class SMADIntersitialViewController : UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.loadData()
     }
     
     @IBAction
     func actionTapClose(_ sender: Any) {
-        
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction
@@ -45,7 +48,12 @@ extension SMADIntersitialViewController {
         self.lblTitle?.text = campaign.name
         self.lblDes?.text = campaign.desc
         
+        let iconURL = URL.init(string: campaign.icon)
+        self.imvIcon?.sd_setImage(with: iconURL, completed: nil)
         
+        guard let asset = campaign.assets.first else { return }
+        let backgroundImageURL = URL.init(string: asset.url)
+        self.imvBackground?.sd_setImage(with: backgroundImageURL, completed: nil)
     }
     
 }
