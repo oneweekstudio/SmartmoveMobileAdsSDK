@@ -105,7 +105,6 @@
 		80BB11F86BF019C4425CFE382B142C58 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 87963323D2B0A2493EC38BE66E08A711 /* SDDiskCache.m */; };
 		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB605B0489B018CED77958836E236C /* AFError.swift */; };
 		83A3C38994C1BE0F1B3FDC74FF3EB86E /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C36C30283FC3D155B2C4B3BE993DC23 /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84CF49CF4C3D19D0E14254764B473989 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 6A7048B49BC8AAAA06C8F6969F75C2A7 /* Images */; };
 		874ACC6B221AC705815C86F888DD1A6C /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B01DE0B7F6D407A6158D6D7226A105D2 /* SDWeakProxy.m */; };
 		886C70D5411B366AE03CEEAD0D34E104 /* SDInternalMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 30385CBCD0D7761C2B69DC9299E3C970 /* SDInternalMacros.m */; };
 		88B3ABACFEE68023A49DC221520F67A1 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C0E463D180ED60CFB7BD627C47D7F2 /* SDImageTransformer.m */; };
@@ -194,9 +193,9 @@
 		F9CD37EE6DD796D86FAFCE65C106D553 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1F9C112C157CB8D1886E04FA861FC9 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1132270226AEC00FD163A760F5BFDD /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB986B9984AE96748401E213296198C /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA626556DE0DB5DBE98269492EB9D858 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E625500A6364F85F90337B334038358E /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FADE8BA1235DAE9200B1747B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 6A7048B49BC8AAAA06C8F6969F75C2A7 /* Images */; };
 		FADE8BA5235DAF4600B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
 		FADE8BA6235DAF4700B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
+		FADE8BA7235DAFA000B1747B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE8BA2235DAE9F00B1747B /* Media.xcassets */; };
 		FB3F6E73095DE433A07EF88783A929A2 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8D2638CC295F7F029864BCE6033AD /* SDWebImageDefine.m */; };
 		FC5F561CA670D699F300DDA4FE2D8314 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DF5B2E7235E71806A6A84C6245D013 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD75AA804121D91DFC1E5A2015DBD414 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F7DC3F308F2ECF78A8D53F5B9F8C05 /* SDWebImageDownloaderConfig.m */; };
@@ -365,7 +364,6 @@
 		662762B1BB18D06582555F428FF7A38B /* FilterValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterValidator.swift; path = Sources/FilterValidator.swift; sourceTree = "<group>"; };
 		66C67B843FC31BEC90340037092D57E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6945BF785653C3FD858564A99DA7DB23 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
-		6A7048B49BC8AAAA06C8F6969F75C2A7 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Images; path = SmartmoveMobileAdsSDK/Assets/Images; sourceTree = "<group>"; };
 		6AEF548D7BD5743BAAE3104F882E923D /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/Core/SDImageCoder.m; sourceTree = "<group>"; };
 		6B39AB6EED56502963B82C350128DCB0 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		6DF78BAB068BEA0A05967E90C77F35C3 /* Bool+Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+Mappable.swift"; path = "MagicMapper/Bool+Mappable.swift"; sourceTree = "<group>"; };
@@ -908,7 +906,6 @@
 			isa = PBXGroup;
 			children = (
 				FADE8BA2235DAE9F00B1747B /* Media.xcassets */,
-				6A7048B49BC8AAAA06C8F6969F75C2A7 /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1305,6 +1302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADE8BA7235DAFA000B1747B /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,7 +1311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE8BA5235DAF4600B1747B /* Media.xcassets in Resources */,
-				FADE8BA1235DAE9200B1747B /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,7 +1318,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CF49CF4C3D19D0E14254764B473989 /* Images in Resources */,
 				FADE8BA6235DAF4700B1747B /* Media.xcassets in Resources */,
 				30B2B73D2D8FCC84B0EEF1F6A4C96BBE /* SMInterstitialViewController.storyboard in Resources */,
 			);
