@@ -44,4 +44,5 @@ TODO: Add long description of the pod here.
    s.dependency 'SwiftyBeaver'
    s.ios.dependency 'Alamofire'
    s.ios.dependency 'MagicMapper'
+   s.ios.dependency 'SDWebImage'
 end

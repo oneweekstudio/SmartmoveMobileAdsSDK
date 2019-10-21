@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
-  SmartmoveMobileAdsSDK: e3e382e22418cc509060f64850eef051329ff93b
+  SmartmoveMobileAdsSDK: 84aa0aaf97b1e7b6da6ab57c341f1f82dc220ca0
   SwiftyBeaver: aaf2ebd7dac2e952991f46a82ed24ad642867ae2
 
 PODFILE CHECKSUM: 6b86e47a57fef2d589d73f57f9cd6a3c1dcb63e7
