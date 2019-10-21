@@ -22,6 +22,7 @@ open class SMADInterstitial: NSObject {
         request.urlRequest = SMADMobileAds.kSMADGetCampaign
         request.load(completionHandler: { (json) in
             //Get json
+            log.debug(json)
             if let data = json as? KeyValue {
                 let response = SMADResponseInfo(data)
                 self.setResponseInfo(response)
