@@ -204,6 +204,7 @@
 		F9CD37EE6DD796D86FAFCE65C106D553 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1F9C112C157CB8D1886E04FA861FC9 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1132270226AEC00FD163A760F5BFDD /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB986B9984AE96748401E213296198C /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA626556DE0DB5DBE98269492EB9D858 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E625500A6364F85F90337B334038358E /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAA1BF85235EAD8F000D6270 /* SMADAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BF84235EAD8F000D6270 /* SMADAnalytics.swift */; };
 		FB3F6E73095DE433A07EF88783A929A2 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8D2638CC295F7F029864BCE6033AD /* SDWebImageDefine.m */; };
 		FC5F561CA670D699F300DDA4FE2D8314 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DF5B2E7235E71806A6A84C6245D013 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD75AA804121D91DFC1E5A2015DBD414 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F7DC3F308F2ECF78A8D53F5B9F8C05 /* SDWebImageDownloaderConfig.m */; };
@@ -507,6 +508,7 @@
 		F6B5E660AD039F038E9886F5CBBA8D8D /* SMADInterstitialViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADInterstitialViewController.swift; sourceTree = "<group>"; };
 		F7C3E96DA57B3AF5882FF6AB2C67DA9E /* SDImageHEICCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoderInternal.h; path = SDWebImage/Private/SDImageHEICCoderInternal.h; sourceTree = "<group>"; };
 		F96F7158C2E2FE8F9D788B5751022AEC /* SMADResponseInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMADResponseInfo.swift; sourceTree = "<group>"; };
+		FAA1BF84235EAD8F000D6270 /* SMADAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMADAnalytics.swift; sourceTree = "<group>"; };
 		FAA7065B333D5AA5410AB31BC0114E3A /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
 		FB9D192CEEFD006126164A8EC038E169 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		FBD2151D5DEF7076320A2DC84E9A9C33 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
@@ -896,6 +898,7 @@
 				00213CE15275A4937140CC53F088DCCB /* SMADRequest.swift */,
 				87B16AF2AB4E0855C272AE05D8692967 /* SMADRequestError.swift */,
 				F96F7158C2E2FE8F9D788B5751022AEC /* SMADResponseInfo.swift */,
+				FAA1BF84235EAD8F000D6270 /* SMADAnalytics.swift */,
 			);
 			name = Classes;
 			path = SmartmoveMobileAdsSDK/Classes;
@@ -1514,6 +1517,7 @@
 				52D5D081CDF68190AD5689FB808264DE /* SMADInterstitial.swift in Sources */,
 				FEC53355FA6170BA69342942A34ACC56 /* SMADInterstitialDelegate.swift in Sources */,
 				F43CEAFAE9C599B7684EE5EE3C076ECC /* SMADInterstitialViewController.swift in Sources */,
+				FAA1BF85235EAD8F000D6270 /* SMADAnalytics.swift in Sources */,
 				7D83226E35DB1B8E5E0A7751559842E6 /* SMADMediation.swift in Sources */,
 				74DB972E962D0DEFAC50FB2ED2C204D1 /* SMADMobileAds.swift in Sources */,
 				522635813BC43B0005DB338AF19C5E77 /* SMADNative.swift in Sources */,

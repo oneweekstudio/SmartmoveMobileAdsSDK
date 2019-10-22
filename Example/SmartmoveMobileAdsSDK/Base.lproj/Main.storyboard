@@ -19,9 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="PBE-A6-MBK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hRY-6x-Eiy">
                                 <rect key="frame" x="24" y="567" width="327" height="50"/>
                                 <subviews>
@@ -88,13 +85,9 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hRY-6x-Eiy" secondAttribute="bottom" constant="50" id="7ea-mu-uyw"/>
                             <constraint firstItem="hRY-6x-Eiy" firstAttribute="top" secondItem="dqm-fg-al2" secondAttribute="bottom" constant="50" id="9Kc-po-Edu"/>
                             <constraint firstItem="hRY-6x-Eiy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="KN1-C6-a9d"/>
-                            <constraint firstAttribute="bottom" secondItem="PBE-A6-MBK" secondAttribute="bottom" id="Oge-6i-JUL"/>
-                            <constraint firstAttribute="trailing" secondItem="PBE-A6-MBK" secondAttribute="trailing" id="Vw7-1Z-G8d"/>
-                            <constraint firstItem="PBE-A6-MBK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="X8i-eg-c0k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pgd-S8-TME" secondAttribute="trailing" constant="8" id="bu1-Rx-CEI"/>
                             <constraint firstItem="Pgd-S8-TME" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="gyq-o8-4cl"/>
                             <constraint firstItem="Pgd-S8-TME" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="lzV-fE-tMV"/>
-                            <constraint firstItem="PBE-A6-MBK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xFw-nI-fis"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SMMoblieAdsSDK" id="6ow-AH-bk4"/>
@@ -126,7 +119,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="test" width="1242" height="2208"/>
-    </resources>
 </document>

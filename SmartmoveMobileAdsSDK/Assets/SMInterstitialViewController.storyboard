@@ -167,10 +167,12 @@
                         <viewLayoutGuide key="safeArea" id="lYH-io-Z6c"/>
                     </view>
                     <connections>
+                        <outlet property="btnGetApp" destination="B4C-vw-Kuq" id="EhO-L1-biH"/>
                         <outlet property="imvBackground" destination="g9W-ip-wPz" id="2G2-NU-Qma"/>
                         <outlet property="imvIcon" destination="4eP-qB-XXZ" id="Wbu-Fk-cgh"/>
                         <outlet property="lblDes" destination="57P-TJ-G8g" id="Rtg-kZ-TbA"/>
                         <outlet property="lblTitle" destination="sMW-wq-GwD" id="xTf-BC-pLN"/>
+                        <outlet property="vContainer" destination="P9l-8Q-oov" id="sfY-OZ-uHv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAM-ae-O71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
