@@ -23,6 +23,7 @@ public class SMADAnalytics : NSObject {
         Alamofire.request(urlRequest).responseJSON { (response) in
             switch (response.result){
             case.success(let JSON):
+                log.debug(JSON)
                 guard let json = JSON as? KeyValue, let data = json["data"] as? String else { return }
                 completionHandler(data)
                 break
