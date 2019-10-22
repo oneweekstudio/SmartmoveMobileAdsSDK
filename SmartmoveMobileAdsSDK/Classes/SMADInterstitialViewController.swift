@@ -20,7 +20,9 @@ public class SMADIntersitialViewController : UIViewController {
     @IBOutlet weak var btnGetApp: UIButton?
     
     public var model: Any?
-    private var smadAnalytics:SMADAnalytics?
+    private var smadAnalytics = SMADAnalytics()
+    
+    private var isViewAnimated = false
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,19 @@ public class SMADIntersitialViewController : UIViewController {
         super.viewDidAppear(animated)
     }
     
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if !isViewAnimated {
+            guard let vContainer = self.vContainer else { return }
+            self.isViewAnimated = true
+            vContainer.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                vContainer.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { success in
+            })
+        }
+    }
+    
     @IBAction
     func actionTapClose(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
@@ -40,12 +55,23 @@ public class SMADIntersitialViewController : UIViewController {
     @IBAction
     func actionTapGetApp(_ sender: Any) {
         //Request
-        self.smadAnalytics?.request({ (str) in
-            log.debug("URL Analytics : \(str)")
-        }, failureHandler: { (error) in
-            log.debug("Error : \(error)")
-        })
+        guard let response = model as? SMADResponseInfo,
+            let campaign = response.data.first
+            else {
+                self.dismiss(animated: false, completion: nil)
+                return }
+        guard let asset = campaign.assets.first else { return }
         
+        let size = "\(asset.width)x\(asset.height)"
+        smadAnalytics.requestClickAd(campaign_id: campaign.campaign_id, size: size)
+        
+        if SMADCommon.shared.isDynamicURL(str: asset.link) {
+            log.debug("Deep link: \(asset.link)")
+            SMADCommon.shared.openDeepLink(from: self, link: asset.link)
+        } else {
+            log.debug("Appstore link: \(asset.link)")
+            SMADCommon.shared.openAppStore(itms: asset.link)
+        }
     }
     
     func configUI() {
@@ -57,7 +83,6 @@ public class SMADIntersitialViewController : UIViewController {
         
         self.btnGetApp?.layer.cornerRadius = 15
         self.btnGetApp?.clipsToBounds = true
-        
     }
     
 }
@@ -68,9 +93,9 @@ extension SMADIntersitialViewController {
     private func loadData() {
         guard let response = model as? SMADResponseInfo,
             let campaign = response.data.first
-        else {
-            self.dismiss(animated: false, completion: nil)
-            return }
+            else {
+                self.dismiss(animated: false, completion: nil)
+                return }
         
         self.lblTitle?.text = campaign.name
         self.lblDes?.text = campaign.desc
@@ -82,7 +107,9 @@ extension SMADIntersitialViewController {
         let backgroundImageURL = URL.init(string: asset.url)
         self.imvBackground?.sd_setImage(with: backgroundImageURL, completed: nil)
         
-        self.smadAnalytics = SMADAnalytics.init(url: asset.link)
+        let size = "\(asset.width)x\(asset.height)"
+        smadAnalytics.requestViewAd(campaign_id: campaign.campaign_id, size: size)
+        
     }
     
 }

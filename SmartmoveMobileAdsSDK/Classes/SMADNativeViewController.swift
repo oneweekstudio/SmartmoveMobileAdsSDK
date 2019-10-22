@@ -15,7 +15,7 @@ import SafariServices
     - Chú ý: Controller này chỉ xử lý deeplink
  
  */
-public class SMNativeViewController : UIViewController {
+public class SMADNativeViewController : UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     
@@ -38,7 +38,7 @@ public class SMNativeViewController : UIViewController {
 
 
 //Function
-extension SMNativeViewController : SFSafariViewControllerDelegate     {
+extension SMADNativeViewController : SFSafariViewControllerDelegate     {
     
     func load() {
         
@@ -63,7 +63,7 @@ extension SMNativeViewController : SFSafariViewControllerDelegate     {
     
 }
 
-extension SMNativeViewController : UIWebViewDelegate {
+extension SMADNativeViewController : UIWebViewDelegate {
     private func webViewDidFinishLoad(_ webView: UIWebView) {
         print("Load success")
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

@@ -22,7 +22,7 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     }
     
     let smadInterstitial = SMADInterstitial.init()
-    
+    let smadNative = SMADNative()
     
     func interstitialDidReceiveAd(_ ad: SMADInterstitial) {
         if let cam = ad.responseInfo?.data.first {
@@ -45,6 +45,7 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Run")
+        self.load()
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,13 +55,35 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.load()
 
     }
     
     @IBAction
     func loadIntersitial(_ sender: Any) {
         self.smadInterstitial.present(fromRootViewController: self)
+    }
+    
+    @IBAction
+    func reloadSMADIntersitial(_ sender: Any) {
+        let request = SMADRequest()
+        smadInterstitial.delegate = self
+        smadInterstitial.load(request, completionHandler: {
+            print("Reload success")
+        }) {
+            print("Reload faillure")
+        }
+    }
+    
+    @IBAction
+    func loadNative(_ sender: Any) {
+        let request = SMADRequest()
+        smadNative.load(request, completionHandler: {
+            self.smadNative.showDialog(fromRootViewController: self) { (success) in
+                
+            }
+        }) {
+            
+        }
     }
     
     func load() {

@@ -22,14 +22,32 @@
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEk-vu-04e">
+                                <rect key="frame" x="0.0" y="852" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="0bJ-FT-HDJ"/>
+                                    <constraint firstAttribute="height" constant="10" id="N2M-Bg-apL"/>
+                                </constraints>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Bej-Rd-C6r">
+                                <rect key="frame" x="197" y="409.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vEk-vu-04e" firstAttribute="leading" secondItem="wzy-sg-huI" secondAttribute="leading" id="3d3-iL-l46"/>
+                            <constraint firstItem="Z9w-Xx-rOo" firstAttribute="top" secondItem="Bej-Rd-C6r" secondAttribute="bottom" constant="8" id="I1u-kR-ruD"/>
                             <constraint firstItem="Z9w-Xx-rOo" firstAttribute="centerY" secondItem="XCt-Je-KTQ" secondAttribute="centerY" id="RTI-Ms-jos"/>
                             <constraint firstItem="Z9w-Xx-rOo" firstAttribute="centerX" secondItem="XCt-Je-KTQ" secondAttribute="centerX" id="m59-cw-dd3"/>
+                            <constraint firstItem="vEk-vu-04e" firstAttribute="bottom" secondItem="wzy-sg-huI" secondAttribute="bottom" id="qQi-k1-oPc"/>
+                            <constraint firstItem="Bej-Rd-C6r" firstAttribute="centerX" secondItem="XCt-Je-KTQ" secondAttribute="centerX" id="wcN-Pa-ABR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wzy-sg-huI"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="vEk-vu-04e" id="XWb-He-Qa4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2l-un-p7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

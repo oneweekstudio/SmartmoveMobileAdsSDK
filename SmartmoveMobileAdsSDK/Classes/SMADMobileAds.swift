@@ -12,8 +12,10 @@ let log = SwiftyBeaver.self
 
 public class SMADMobileAds : NSObject {
     
-    static var isDebug: Bool = false
+    public static var isDebug: Bool = false
     static let kSMADGetCampaign = "http://cpibe.appboom.net/api/v2/get_campaign"
+    static let kSMADUrlClickAd = "http://cpibe.appboom.net/api/v2/click_ad"
+    static let kSMADUrlViewAd = "http://cpibe.appboom.net/api/v2/view_ad"
 
     public class func setDebug(_ isDebug:Bool = true){
         self.isDebug = isDebug

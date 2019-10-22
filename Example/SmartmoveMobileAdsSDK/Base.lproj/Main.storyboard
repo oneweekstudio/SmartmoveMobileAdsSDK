@@ -23,22 +23,33 @@
                                 <rect key="frame" x="24" y="567" width="327" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feL-Gw-29T">
-                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="50"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Interstitial"/>
                                         <connections>
                                             <action selector="loadIntersitial:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="72K-dU-pRQ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyU-FG-niK">
+                                        <rect key="frame" x="84" y="0.0" width="75.5" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reload"/>
+                                        <connections>
+                                            <action selector="reloadSMADIntersitial:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dMA-DP-UjK"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWr-WF-Bvs">
-                                        <rect key="frame" x="111.5" y="0.0" width="104" height="50"/>
+                                        <rect key="frame" x="167.5" y="0.0" width="76" height="50"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Native">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loadNative:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vsH-8u-gty"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2G-rg-Pr7">
-                                        <rect key="frame" x="223.5" y="0.0" width="103.5" height="50"/>
+                                        <rect key="frame" x="251.5" y="0.0" width="75.5" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Banner"/>
                                     </button>

@@ -10,14 +10,32 @@ import Alamofire
 import MagicMapper
 import AdSupport
 
+
+public enum SMADRequestOption : String {
+    case random = "random"
+    case quota = "quota"
+}
+
+public enum SMADFormat : String {
+    case full = "full"
+    case banner = "banner"
+    case native = "native"
+}
+
+
 open class SMADRequest: NSObject {
     
     private var orientation = ""
     private var device_type = "iphone"
-    open var baseParam:[String:Any] = [:]
-    
     private var bundleID:String = "alex.test.packagename"
+    
+    open  var adFormat: SMADFormat = .full
+    
+    open var baseParam:[String:Any] = [:]
+
     open var urlRequest:String = ""
+    
+    open var adRequestOption:SMADRequestOption = .random
     
     public override init() {
         super.init()
@@ -33,7 +51,7 @@ open class SMADRequest: NSObject {
         }
         
         bundleID = SMADMobileAds.isDebug ? "alex.test.packagename" : Bundle.main.bundleIdentifier!
-        
+        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
         baseParam = ["package_name":bundleID,
                      "lang":NSLocale.preferredLanguages[0],
                      "location":(Locale.current as NSLocale).object(forKey: .countryCode) as? String ?? "",
@@ -43,7 +61,10 @@ open class SMADRequest: NSObject {
             "ifa":"\(ASIdentifierManager.shared().advertisingIdentifier.uuidString)",
             "uuid":"\((UIDevice.current.identifierForVendor?.uuidString)!)",
             "system":"ios",
-            "sdk_version":"1.0"]
+            "sdk_version":"1.0",
+            "option":"\(adRequestOption.rawValue)",
+            "format":"\(adFormat.rawValue)"
+            ]
     }
     
     func load(completionHandler: ((Any) -> Void)? = nil , failureHandler: ((Error) -> Void)? = nil ){
