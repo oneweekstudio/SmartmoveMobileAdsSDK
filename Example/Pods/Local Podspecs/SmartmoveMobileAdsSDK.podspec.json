@@ -19,18 +19,10 @@
     "ios": "9.3"
   },
   "source_files": "SmartmoveMobileAdsSDK/**/*",
-  "resource_bundles": {
-    "SmartmoveMobileAdsSDK": [
-      "SmartmoveMobileAdsSDK/Assets/*"
-    ]
-  },
-  "static_framework": true,
-  "dependencies": {
-    "SwiftyBeaver": [
-
-    ]
-  },
   "ios": {
+    "resource_bundles": {
+      "SmartmoveMobileAdsSDK": "Assets/**/*.xcassets"
+    },
     "dependencies": {
       "Alamofire": [
 
@@ -42,6 +34,17 @@
 
       ]
     }
+  },
+  "resource_bundles": {
+    "SmartmoveMobileAdsSDK": [
+      "SmartmoveMobileAdsSDK/Assets/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "SwiftyBeaver": [
+
+    ]
   },
   "subspecs": [
     {
