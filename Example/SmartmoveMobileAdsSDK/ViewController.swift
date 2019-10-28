@@ -14,6 +14,10 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     
     @IBOutlet weak var lblTitle:UILabel!
     @IBOutlet weak var lblDes:UILabel!
+    @IBOutlet weak var lblCampaign_ID:UILabel!
+    @IBOutlet weak var lblTheme:UILabel!
+    @IBOutlet weak var lblAsset: UILabel!
+
     
     var campaign: SMADCampaign! {
         didSet {
@@ -28,8 +32,11 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     func interstitialDidReceiveAd(_ ad: SMADInterstitial) {
         if let cam = ad.responseInfo?.data.first {
             self.campaign = cam
-            self.lblTitle.text = self.campaign.name
-            self.lblDes.text = self.campaign.desc
+            self.lblTitle.text = "Name: " + self.campaign.name
+            self.lblDes.text = "Description: " + self.campaign.desc
+            self.lblCampaign_ID.text = "Campaign ID: \(self.campaign.campaign_id)"
+            self.lblTheme.text = "Theme: \(self.campaign.theme)"
+            self.lblAsset.text = "Number of Asset: \(self.campaign.assets.count)"
         } else {
             print("Error")
         }

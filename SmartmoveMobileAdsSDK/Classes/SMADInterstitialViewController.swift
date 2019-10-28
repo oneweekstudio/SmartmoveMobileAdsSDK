@@ -28,6 +28,19 @@ public class SMADIntersitialViewController : UIViewController {
         super.viewDidLoad()
         self.loadData()
         self.configUI()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.close), name: NSNotification.Name.init("DidfinshLoad"), object: nil)
+    }
+    
+    @objc func close() {
+        UIView.animate(withDuration: 0.2, animations: {
+            guard let container = self.vContainer else { return }
+            container.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+        }) { (status) in
+            log.debug("Đóng SMADIntersitialViewController")
+            self.dismiss(animated: false, completion: {
+                log.debug("Đóng quảng cáo full thành công")
+            })
+        }
     }
     
     public override func viewDidAppear(_ animated: Bool) {
@@ -49,7 +62,15 @@ public class SMADIntersitialViewController : UIViewController {
     
     @IBAction
     func actionTapClose(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+        UIView.animate(withDuration: 0.2, animations: {
+            guard let container = self.vContainer else { return }
+            container.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+        }) { (status) in
+            log.debug("Đóng SMADIntersitialViewController")
+            self.dismiss(animated: false, completion: {
+                log.debug("Đóng quảng cáo full thành công")
+            })
+        }
     }
     
     @IBAction
@@ -75,11 +96,11 @@ public class SMADIntersitialViewController : UIViewController {
     public func redirect(asset: SMADAsset) {
         switch SMADCommon.shared.isDynamicURL(str: asset.link) {
         case .dynamic:
-            log.debug("Deep link: \(asset.link)")
+            //            log.debug("Deep link: \(asset.link)")
             SMADCommon.shared.openDeepLink(from: self, link: asset.link)
             break
         case .itune :
-            log.debug("Appstore link: \(asset.link)")
+            //            log.debug("Appstore link: \(asset.link)")
             SMADCommon.shared.openAppStore(itms: asset.link)
             break
         default:

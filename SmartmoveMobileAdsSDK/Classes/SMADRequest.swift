@@ -51,7 +51,7 @@ open class SMADRequest: NSObject {
         }
         
         bundleID = SMADMobileAds.isDebug ? "alex.test.packagename" : Bundle.main.bundleIdentifier!
-        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
+//        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
         baseParam = ["package_name":bundleID,
                      "lang":NSLocale.preferredLanguages[0],
                      "location":(Locale.current as NSLocale).object(forKey: .countryCode) as? String ?? "",

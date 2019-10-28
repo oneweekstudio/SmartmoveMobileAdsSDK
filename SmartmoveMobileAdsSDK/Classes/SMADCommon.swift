@@ -29,7 +29,7 @@ public class SMADCommon : NSObject {
     public func isDynamicURL(str: String) -> SMADSupportLink {
         if str.contains("itms") {
             return .itune
-        } else if str.contains("https") {
+        } else if str.contains("page.link") && str.contains("http") {
             return .dynamic
         } else {
             return .other
@@ -64,10 +64,11 @@ public class SMADCommon : NSObject {
         controller.present( nativeViewController, animated: false)
     }
     
-    public func showError(rootViewController: UIViewController) {
-        let alert = UIAlertController(title: "Lỗi", message: "Link truyền vào bị sai", preferredStyle: .alert)
+    public func showError(rootViewController: UIViewController, message: String = "Link truyền vào bị sai", completionHandler: (() -> Void)? = nil) {
+        let alert = UIAlertController(title: "Lỗi", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: {action in
             alert.dismiss(animated: true, completion: nil)
+            completionHandler?()
         }))
         
         rootViewController.present(alert, animated: true)
