@@ -49,6 +49,7 @@ public class SMADCommon : NSObject {
     public func openDeepLink( from controller: UIViewController, link: String = "https://flyingfacev2.page.link/test") {
         let nativeViewController = UIStoryboard.init(name: "SMADNative", bundle: getBundlePath()).instantiateViewController(withIdentifier: "SMADNativeViewController") as! SMADNativeViewController
         nativeViewController.modalPresentationStyle = .overCurrentContext
+        nativeViewController.dynamicLink = link
         controller.present( nativeViewController, animated: false)
     }
 

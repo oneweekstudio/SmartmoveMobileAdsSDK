@@ -37,7 +37,7 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     }
     
     func interstitial(_ ad: SMADInterstitial, didFailToReceiveAdWithError error: Error) {
-        
+        print(error)
     }
     
     

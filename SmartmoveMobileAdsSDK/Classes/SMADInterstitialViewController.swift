@@ -60,7 +60,10 @@ public class SMADIntersitialViewController : UIViewController {
             else {
                 self.dismiss(animated: false, completion: nil)
                 return }
-        guard let asset = campaign.assets.first else { return }
+        guard let asset = campaign.assets.first else {
+            let size = "no-banner"
+            smadAnalytics.requestClickAd(campaign_id: campaign.campaign_id, size: size)
+            return }
         
         let size = "\(asset.width)x\(asset.height)"
         smadAnalytics.requestClickAd(campaign_id: campaign.campaign_id, size: size)
@@ -103,7 +106,10 @@ extension SMADIntersitialViewController {
         let iconURL = URL.init(string: campaign.icon)
         self.imvIcon?.sd_setImage(with: iconURL, completed: nil)
         
-        guard let asset = campaign.assets.first else { return }
+        guard let asset = campaign.assets.first else {
+            let size = "no-banner"
+            smadAnalytics.requestViewAd(campaign_id: campaign.campaign_id, size: size)
+            return }
         let backgroundImageURL = URL.init(string: asset.url)
         self.imvBackground?.sd_setImage(with: backgroundImageURL, completed: nil)
         

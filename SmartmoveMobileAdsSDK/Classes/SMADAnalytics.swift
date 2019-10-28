@@ -25,32 +25,32 @@ public class SMADAnalytics : SMADRequest {
         }
         Alamofire.request( url, method: .get, parameters: params)
             .responseJSON {response in
-                log.debug("URL Analytics = \(response.request)")
+                log.debug("URL Analytics = \(String(describing: response.request!))")
                 switch (response.result){
                 case.success(let data):
-                    log.debug(data)
+                    log.debug(" Success : \(data)")
                     break
                 case .failure(let error):
-                    log.debug(error)
+                    log.debug("Error : \(error)")
                     break
                 }
         }
     }
-
+    
     public func requestViewAd(campaign_id: Int, size:String) {
         log.debug("==============")
-        log.debug(SMADMobileAds.kSMADUrlViewAd)
-        log.debug(campaign_id)
-        log.debug(size)
+        log.debug("URL : \(SMADMobileAds.kSMADUrlViewAd)")
+        log.debug("Campaign_id: \(campaign_id)")
+        log.debug("Size: \(size)")
         log.debug("==============")
         self.request(url: SMADMobileAds.kSMADUrlViewAd, campaign_id: campaign_id, size: size)
     }
     
     public func requestClickAd(campaign_id: Int, size:String)  {
         log.debug("==============")
-        log.debug(SMADMobileAds.kSMADUrlClickAd)
-        log.debug(campaign_id)
-        log.debug(size)
+        log.debug("URL : \(SMADMobileAds.kSMADUrlClickAd)")
+        log.debug("Campaign_id: \(campaign_id)")
+        log.debug("Size: \(size)")
         log.debug("==============")
         self.request(url: SMADMobileAds.kSMADUrlClickAd, campaign_id: campaign_id, size: size)
     }

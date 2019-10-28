@@ -3,6 +3,7 @@ platform :ios, '9.3'
 
 target 'SmartmoveMobileAdsSDK_Example' do
   pod 'SmartmoveMobileAdsSDK', :path => '../'
+  pod 'PKHUD', '~> 5.0'
 
 #  target 'SmartmoveMobileAdsSDK_Tests' do
 #    inherit! :search_paths

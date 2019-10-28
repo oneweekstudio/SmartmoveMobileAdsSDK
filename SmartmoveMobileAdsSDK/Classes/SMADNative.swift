@@ -69,24 +69,47 @@ open class SMADNative : NSObject {
         guard let response = self.responseInfo,
             let campaign = response.data.first
             else {
+                //                self.showAlertError(rootViewController: rootViewController, title: "Campaign lỗi", message: "Xin vui lòng kiểm tra lại campaign")
                 return }
-        guard let asset = campaign.assets.first else { return }
+        if let asset = campaign.assets.first  {
+            //            self.showAlertError(rootViewController: rootViewController)
+            
+            
+            let size = "\(asset.width)x\(asset.height)"
+            smadAnalytics?.requestViewAd(campaign_id: campaign.campaign_id, size: size)
+            
+            let alert = UIAlertController(title: campaign.name, message: campaign.desc, preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: titleSubmit, style: .default, handler: {action in
+                success(true)
+                self.getAppAction(fromRootViewController: rootViewController, content: self.responseInfo)
+            }))
+            alert.addAction(UIAlertAction(title: titleCancel, style: .cancel, handler: {action in
+                success(false)
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            
+            rootViewController.present(alert, animated: true)
+            
+        } else {
+            let size = "no-banner"
+            smadAnalytics?.requestViewAd(campaign_id: campaign.campaign_id, size: size)
+            
+            let alert = UIAlertController(title: campaign.name, message: campaign.desc, preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: titleSubmit, style: .default, handler: {action in
+                success(true)
+                self.getAppAction(fromRootViewController: rootViewController, content: self.responseInfo)
+            }))
+            alert.addAction(UIAlertAction(title: titleCancel, style: .cancel, handler: {action in
+                success(false)
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            
+            rootViewController.present(alert, animated: true)
+        }
         
-        let size = "\(asset.width)x\(asset.height)"
-        smadAnalytics?.requestViewAd(campaign_id: campaign.campaign_id, size: size)
         
-        let alert = UIAlertController(title: campaign.name, message: campaign.desc, preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: titleSubmit, style: .default, handler: {action in
-            success(true)
-            self.getAppAction(fromRootViewController: rootViewController, content: self.responseInfo)
-        }))
-        alert.addAction(UIAlertAction(title: titleCancel, style: .cancel, handler: {action in
-            success(false)
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        
-        rootViewController.present(alert, animated: true)
     }
     
     public var isReady: Bool = false
@@ -105,7 +128,10 @@ open class SMADNative : NSObject {
             let campaign = response.data.first
             else {
                 return }
-        guard let asset = campaign.assets.first else { return }
+        guard let asset = campaign.assets.first else {
+            let size = "no-banner"
+            smadAnalytics?.requestClickAd(campaign_id: campaign.campaign_id, size: size)
+            return }
         
         let size = "\(asset.width)x\(asset.height)"
         smadAnalytics?.requestClickAd(campaign_id: campaign.campaign_id, size: size)
@@ -117,6 +143,14 @@ open class SMADNative : NSObject {
             log.debug("Appstore link: \(asset.link)")
             SMADCommon.shared.openAppStore(itms: asset.link)
         }
+    }
+    
+    public func showAlertError(rootViewController: UIViewController, title: String = "Lỗi không có asset", message: String = "Không có asset, hãy yêu cầu nhập campaign có asset") {
+        let alert = UIAlertController(title: title , message: message, preferredStyle: .alert)
+        rootViewController.present(alert, animated: true)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
+            alert.dismiss(animated: true, completion: nil)
+        }))
     }
     
 }
