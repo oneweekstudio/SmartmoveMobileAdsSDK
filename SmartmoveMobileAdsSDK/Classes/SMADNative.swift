@@ -136,12 +136,23 @@ open class SMADNative : NSObject {
         let size = "\(asset.width)x\(asset.height)"
         smadAnalytics?.requestClickAd(campaign_id: campaign.campaign_id, size: size)
         
-        if SMADCommon.shared.isDynamicURL(str: asset.link) {
+        self.redirect(asset: asset, rootViewController: rootViewController)
+    }
+    
+    public func redirect(asset: SMADAsset, rootViewController: UIViewController) {
+        switch SMADCommon.shared.isDynamicURL(str: asset.link) {
+        case .dynamic:
             log.debug("Deep link: \(asset.link)")
             SMADCommon.shared.openDeepLink(from: rootViewController, link: asset.link)
-        } else {
+            break
+        case .itune :
             log.debug("Appstore link: \(asset.link)")
             SMADCommon.shared.openAppStore(itms: asset.link)
+            break
+        default:
+            log.debug("Không phải link hỗ trợ: \(asset.link)")
+            SMADCommon.shared.showError(rootViewController: rootViewController)
+            break
         }
     }
     

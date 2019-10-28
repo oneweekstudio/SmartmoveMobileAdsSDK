@@ -8,6 +8,7 @@
 
 import UIKit
 import SmartmoveMobileAdsSDK
+import PKHUD
 
 class ViewController: UIViewController, SMADInterstitialDelegate {
     
@@ -65,24 +66,28 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
     
     @IBAction
     func reloadSMADIntersitial(_ sender: Any) {
+        HUD.show(.labeledProgress(title: nil, subtitle: "Please wait ..."), onView: self.view)
         let request = SMADRequest()
         smadInterstitial.delegate = self
         smadInterstitial.load(request, completionHandler: {
             print("Reload success")
+            HUD.hide()
         }) {
             print("Reload faillure")
+            HUD.hide()
         }
     }
     
     @IBAction
     func loadNative(_ sender: Any) {
+        HUD.show(.labeledProgress(title: nil, subtitle: "Please wait ..."), onView: self.view)
         let request = SMADRequest()
         smadNative.load(request, completionHandler: {
+            HUD.hide()
             self.smadNative.showDialog(fromRootViewController: self) { (success) in
-                
             }
         }) {
-            
+            HUD.hide()
         }
     }
     

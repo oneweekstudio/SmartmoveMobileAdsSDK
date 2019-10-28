@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/MagicMapper" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SmartmoveMobileAdsSDK" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyBeaver"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/MagicMapper" "${PODS_CONFIGURATION_BUILD_DIR}/PKHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SmartmoveMobileAdsSDK" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyBeaver"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MagicMapper/MagicMapper.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SmartmoveMobileAdsSDK/SmartmoveMobileAdsSDK.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyBeaver/SwiftyBeaver.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MagicMapper/MagicMapper.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PKHUD/PKHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SmartmoveMobileAdsSDK/SmartmoveMobileAdsSDK.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyBeaver/SwiftyBeaver.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "Alamofire" -framework "ImageIO" -framework "MagicMapper" -framework "SDWebImage" -framework "SmartmoveMobileAdsSDK" -framework "SwiftyBeaver"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "Alamofire" -framework "ImageIO" -framework "MagicMapper" -framework "PKHUD" -framework "SDWebImage" -framework "SmartmoveMobileAdsSDK" -framework "SwiftyBeaver"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

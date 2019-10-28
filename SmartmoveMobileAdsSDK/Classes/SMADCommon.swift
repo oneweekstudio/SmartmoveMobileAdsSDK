@@ -7,6 +7,11 @@
 
 import Foundation
 
+public enum SMADSupportLink : String {
+    case dynamic = "https"
+    case itune = "itune"
+    case other = "other"
+}
 
 public func getBundlePath() -> Bundle {
     let pathBundle = Bundle.main.path(forResource: "SmartmoveMobileAdsSDK", ofType: "bundle")
@@ -21,8 +26,14 @@ public class SMADCommon : NSObject {
     public static let shared = SMADCommon()
     
     //Kiểm tra có phải dynamic link không
-    public func isDynamicURL(str: String) -> Bool {
-        return !str.contains("itms")
+    public func isDynamicURL(str: String) -> SMADSupportLink {
+        if str.contains("itms") {
+            return .itune
+        } else if str.contains("https") {
+            return .dynamic
+        } else {
+            return .other
+        }
     }
     
     //Khi link nhận được từ campaign là một link "itms" -> Chuyển sang appstore
@@ -52,7 +63,15 @@ public class SMADCommon : NSObject {
         nativeViewController.dynamicLink = link
         controller.present( nativeViewController, animated: false)
     }
-
-
+    
+    public func showError(rootViewController: UIViewController) {
+        let alert = UIAlertController(title: "Lỗi", message: "Link truyền vào bị sai", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: {action in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        rootViewController.present(alert, animated: true)
+    }
+    
     
 }
