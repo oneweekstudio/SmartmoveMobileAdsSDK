@@ -46,7 +46,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'SwiftyBeaver'
-   s.ios.dependency 'Alamofire'
-   s.ios.dependency 'MagicMapper'
+   s.ios.dependency 'Alamofire', "~> 4.9.0"
+   s.ios.dependency 'MagicMapper', "~> 1.0.2"
    s.ios.dependency 'SDWebImage'
 end
