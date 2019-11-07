@@ -63,7 +63,7 @@ open class SMADInterstitial: NSObject {
         
         //Pass data
         intersitialViewController.model = self.responseInfo
-        
+        intersitialViewController.delegate = self.delegate
         rootViewController.present(intersitialViewController, animated: false, completion: nil)
     }
     

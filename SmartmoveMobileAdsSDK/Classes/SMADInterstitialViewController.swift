@@ -21,6 +21,7 @@ public class SMADIntersitialViewController : UIViewController {
     
     public var model: Any?
     private var smadAnalytics = SMADAnalytics()
+    open var delegate: SMADInterstitialDelegate?
     
     private var isViewAnimated = false
     
@@ -39,6 +40,7 @@ public class SMADIntersitialViewController : UIViewController {
             log.debug("Đóng SMADIntersitialViewController")
             self.dismiss(animated: false, completion: {
                 log.debug("Đóng quảng cáo full thành công")
+                self.delegate?.interstitialDidCloseController()
             })
         }
     }
@@ -69,6 +71,7 @@ public class SMADIntersitialViewController : UIViewController {
             log.debug("Đóng SMADIntersitialViewController")
             self.dismiss(animated: false, completion: {
                 log.debug("Đóng quảng cáo full thành công")
+                 self.delegate?.interstitialDidCloseController()
             })
         }
     }

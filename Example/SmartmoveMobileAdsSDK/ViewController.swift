@@ -12,6 +12,7 @@ import PKHUD
 
 class ViewController: UIViewController, SMADInterstitialDelegate {
     
+    
     @IBOutlet weak var lblTitle:UILabel!
     @IBOutlet weak var lblDes:UILabel!
     @IBOutlet weak var lblCampaign_ID:UILabel!
@@ -48,6 +49,9 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
         print(error)
     }
     
+    func interstitialDidCloseController() {
+        print("Intersititial Did Close")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
