@@ -91,7 +91,7 @@ public class SMADIntersitialViewController : UIViewController {
         
         let size = "\(asset.width)x\(asset.height)"
         smadAnalytics.requestClickAd(campaign_id: campaign.campaign_id, size: size)
-        
+        self.delegate?.interstitialDidGetApp()
         self.redirect(asset: asset)
         
     }
