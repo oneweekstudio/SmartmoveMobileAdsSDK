@@ -1,18 +1,18 @@
 PODS:
-  - Alamofire (5.0.0-rc.3)
+  - Alamofire (4.8.2)
   - MagicMapper (1.0.2)
   - PKHUD (5.3.0)
   - SDWebImage (5.3.1):
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
   - SmartmoveMobileAdsSDK (2.0.0):
-    - Alamofire (~> 5.0.0-rc.3)
+    - Alamofire (~> 4.8.2)
     - MagicMapper (~> 1.0.2)
     - SDWebImage
     - SmartmoveMobileAdsSDK/SMADResources (= 2.0.0)
     - SwiftyBeaver
   - SmartmoveMobileAdsSDK/SMADResources (2.0.0):
-    - Alamofire (~> 5.0.0-rc.3)
+    - Alamofire (~> 4.8.2)
     - MagicMapper (~> 1.0.2)
     - SDWebImage
     - SwiftyBeaver
@@ -35,13 +35,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
-  SmartmoveMobileAdsSDK: af005a45b9472b9f3613b07f3edb3683148a5e4f
+  SmartmoveMobileAdsSDK: 39bef3f5bb71b10be5cf55f2f90cbee43ff2f6d4
   SwiftyBeaver: 3d3e93a12d648bd400b6f2948a7ef128b5b183c7
 
-PODFILE CHECKSUM: 093e4b93927ecc743d9cd2d4fda6efd19bc54d1e
+PODFILE CHECKSUM: dc919cda17f14c60f3ec88a73a680c0738b18c8b
 
 COCOAPODS: 1.8.4

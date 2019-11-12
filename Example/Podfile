@@ -1,5 +1,5 @@
 use_frameworks!
-platform :ios, '10.0'
+platform :ios, '9.3'
 
 target 'SmartmoveMobileAdsSDK_Example' do
   pod 'SmartmoveMobileAdsSDK', :path => '../'
