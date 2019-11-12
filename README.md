@@ -17,7 +17,7 @@ SmartmoveMobileAdsSDK is available through [CocoaPods](https://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SmartmoveMobileAdsSDK'
+od 'SmartmoveMobileAdsSDK', :git => 'https://github.com/oneweekstudio/SmartmoveMobileAdsSDK.git', :branch => 'swift4'
 ```
 
 ## Author
