@@ -56,13 +56,14 @@ open class SMADInterstitial: NSObject {
     
     public func present(fromRootViewController rootViewController: UIViewController) {
         //Code
+        guard let response = self.responseInfo else { return }
         let storyboard = UIStoryboard.init(name: "SMInterstitialViewController", bundle: getBundlePath())
         let intersitialViewController =  storyboard.instantiateViewController(withIdentifier: "SMADIntersitialViewController") as! SMADIntersitialViewController
         intersitialViewController.modalPresentationStyle = .overCurrentContext
         intersitialViewController.hidesBottomBarWhenPushed = true
         
         //Pass data
-        intersitialViewController.model = self.responseInfo
+        intersitialViewController.model = response
         intersitialViewController.delegate = self.delegate
         rootViewController.present(intersitialViewController, animated: false, completion: nil)
     }
