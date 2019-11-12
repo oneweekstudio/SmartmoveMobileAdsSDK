@@ -28,7 +28,7 @@ public class SMADNativeViewController : UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.load()
-        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
     @objc func willResignActive() {
