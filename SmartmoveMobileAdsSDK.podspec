@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartmoveMobileAdsSDK'
-  s.version          = '0.1.4'
+  s.version          = '2.0.0'
   s.summary          = 'A short description of SmartmoveMobileAdsSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/oneweekstudio/SmartmoveMobileAdsSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'SmartmoveMobileAdsSDK/**/*'
   
@@ -46,7 +46,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'SwiftyBeaver'
-   s.ios.dependency 'Alamofire', "~> 4.9.0"
+   s.ios.dependency 'Alamofire', '~> 5.0.0-rc.3'
    s.ios.dependency 'MagicMapper', "~> 1.0.2"
    s.ios.dependency 'SDWebImage'
 end

@@ -18,7 +18,7 @@ public protocol SMADInterstitialDelegate {
 
     func interstitial(_ ad: SMADInterstitial, didFailToReceiveAdWithError error: Error)
     
-    func interstitialDidCloseController()
-    func interstitialDidGetApp()
+    func interstitialDidClose()
+    func interstitialDidClickAd()
 
 }

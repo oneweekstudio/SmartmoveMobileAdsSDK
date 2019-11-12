@@ -68,7 +68,7 @@ open class SMADRequest: NSObject {
     }
     
     func load(completionHandler: ((Any) -> Void)? = nil , failureHandler: ((Error) -> Void)? = nil ){
-        Alamofire.request(self.urlRequest, method: .get, parameters: self.baseParam)
+        AF.request(self.urlRequest, method: .get, parameters: self.baseParam)
             .responseJSON {response in
                 switch (response.result){
                 case.success(let data):

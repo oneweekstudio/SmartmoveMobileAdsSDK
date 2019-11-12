@@ -23,7 +23,7 @@ public class SMADAnalytics : SMADRequest {
 //        for (key, value) in params {
 //            print("-> \(key)  - \(value)")
 //        }
-        Alamofire.request( url, method: .get, parameters: params)
+        AF.request( url, method: .get, parameters: params)
             .responseJSON {response in
 //                log.debug("URL Analytics = \(String(describing: response.request!))")
                 switch (response.result){

@@ -28,7 +28,7 @@ public class SMADNativeViewController : UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.load()
-        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
     
     @objc func willResignActive() {
@@ -85,11 +85,11 @@ extension SMADNativeViewController : UIWebViewDelegate {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
     }
     
-    private func webViewDidFinishLoad(_ webView: UIWebView) {
+    public func webViewDidFinishLoad(_ webView: UIWebView) {
         log.debug("webViewDidFinishLoad")
     }
     
-    private func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+    public func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         log.debug("didFailLoadWithError: \(error)")
     }
     

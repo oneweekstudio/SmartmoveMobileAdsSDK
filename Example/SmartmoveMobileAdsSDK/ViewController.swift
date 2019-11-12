@@ -11,7 +11,16 @@ import SmartmoveMobileAdsSDK
 import PKHUD
 
 class ViewController: UIViewController, SMADInterstitialDelegate {
+    func interstitialDidClose() {
+        
+    }
     
+    func interstitialDidClickAd() {
+        
+    }
+    
+    
+ 
     
     @IBOutlet weak var lblTitle:UILabel!
     @IBOutlet weak var lblDes:UILabel!

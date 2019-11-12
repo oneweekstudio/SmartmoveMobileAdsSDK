@@ -40,7 +40,7 @@ public class SMADIntersitialViewController : UIViewController {
             log.debug("Đóng SMADIntersitialViewController")
             self.dismiss(animated: false, completion: {
                 log.debug("Đóng quảng cáo full thành công")
-                self.delegate?.interstitialDidCloseController()
+                self.delegate?.interstitialDidClose()
             })
         }
     }
@@ -71,7 +71,7 @@ public class SMADIntersitialViewController : UIViewController {
             log.debug("Đóng SMADIntersitialViewController")
             self.dismiss(animated: false, completion: {
                 log.debug("Đóng quảng cáo full thành công")
-                 self.delegate?.interstitialDidCloseController()
+                 self.delegate?.interstitialDidClickAd()
             })
         }
     }
@@ -91,7 +91,7 @@ public class SMADIntersitialViewController : UIViewController {
         
         let size = "\(asset.width)x\(asset.height)"
         smadAnalytics.requestClickAd(campaign_id: campaign.campaign_id, size: size)
-        self.delegate?.interstitialDidGetApp()
+        self.delegate?.interstitialDidClickAd()
         self.redirect(asset: asset)
         
     }
