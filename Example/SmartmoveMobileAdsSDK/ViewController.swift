@@ -12,11 +12,11 @@ import PKHUD
 
 class ViewController: UIViewController, SMADInterstitialDelegate {
     func interstitialDidClose() {
-        
+        print("Close nè")
     }
     
     func interstitialDidClickAd() {
-        
+         print("Click ad nè")
     }
     
     
