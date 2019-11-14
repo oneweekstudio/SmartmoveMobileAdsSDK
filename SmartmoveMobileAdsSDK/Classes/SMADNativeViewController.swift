@@ -47,6 +47,11 @@ public class SMADNativeViewController : UIViewController {
     override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.webView.removeFromSuperview()
+    }
 }
 
 
@@ -55,9 +60,9 @@ extension SMADNativeViewController : SFSafariViewControllerDelegate     {
     
     func load() {
         
-        if SMADMobileAds.isDebug {
-            self.dynamicLink = "https://flyingfacev2.page.link/test"
-        }
+//        if SMADMobileAds.isDebug {
+//            self.dynamicLink = "https://flyingfacev2.page.link/test"
+//        }
         
         guard
             let link = self.dynamicLink,
@@ -100,9 +105,9 @@ extension SMADNativeViewController : UIWebViewDelegate {
         if countdown == 0 {
             self.timer?.invalidate()
             self.countdown = 5
-            SMADCommon.shared.showError(rootViewController: self, message: "Deep link chưa được sử dụng") {
+//            SMADCommon.shared.showError(rootViewController: self, message: "Deep link chưa được sử dụng") {
                 self.willResignActive()
-            }
+//            }
         }
     }
 
