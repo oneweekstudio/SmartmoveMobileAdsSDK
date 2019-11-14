@@ -166,7 +166,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 97VVP8LDF2;
+						DevelopmentTeam = 84UBS8FP8H;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -408,7 +408,7 @@
 			baseConfigurationReference = 5388CDAEBEFC2C193BA49FF4 /* Pods-SmartmoveMobileAdsSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 97VVP8LDF2;
+				DEVELOPMENT_TEAM = 84UBS8FP8H;
 				INFOPLIST_FILE = SmartmoveMobileAdsSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

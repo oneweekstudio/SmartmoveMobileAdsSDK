@@ -99,11 +99,9 @@ public class SMADIntersitialViewController : UIViewController {
     public func redirect(asset: SMADAsset) {
         switch SMADCommon.shared.isDynamicURL(str: asset.link) {
         case .dynamic:
-            //            log.debug("Deep link: \(asset.link)")
             SMADCommon.shared.openDeepLink(from: self, link: asset.link)
             break
         case .itune :
-            //            log.debug("Appstore link: \(asset.link)")
             SMADCommon.shared.openAppStore(itms: asset.link)
             break
         default:
