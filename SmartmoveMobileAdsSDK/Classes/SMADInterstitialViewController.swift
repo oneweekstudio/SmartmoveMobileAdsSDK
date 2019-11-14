@@ -71,7 +71,7 @@ public class SMADIntersitialViewController : UIViewController {
             log.debug("Đóng SMADIntersitialViewController")
             self.dismiss(animated: false, completion: {
                 log.debug("Đóng quảng cáo full thành công")
-                 self.delegate?.interstitialDidClickAd()
+                 self.delegate?.interstitialDidClose()
             })
         }
     }
