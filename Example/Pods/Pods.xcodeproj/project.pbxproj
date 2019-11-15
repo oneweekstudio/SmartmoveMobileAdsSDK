@@ -754,7 +754,6 @@
 			children = (
 				99A7D11488DCAB515453682474531913 /* cancel.png */,
 				D8024B22A5D3281016885E81242036B5 /* Download.png */,
-				67DA1378919DD8B43088635DA1757969 /* Resources */,
 			);
 			name = SMADResources;
 			path = SmartmoveMobileAdsSDK/SMADResources;
@@ -835,13 +834,6 @@
 			isa = PBXGroup;
 			children = (
 				390B5326912DB52A1BCFC0335874C7B7 /* Images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		67DA1378919DD8B43088635DA1757969 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
