@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartmoveMobileAdsSDK'
-  s.version          = '2.0.2'
+  s.version          = '2.0.3'
   s.summary          = 'A short description of SmartmoveMobileAdsSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -30,18 +30,18 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'SmartmoveMobileAdsSDK/**/*'
-  
-  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/**/*.xcassets' }
+  s.source_files = 'SmartmoveMobileAdsSDK/Classes/**/*'
 
-  s.resource_bundles = {
-     'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
-   }
+  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/**/*.png' }
+
+  # s.resource_bundles = {
+  #    'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
+  #  }
   s.static_framework = true
-  
-  s.subspec 'SMADResources' do |resources|
-      resources.resource_bundle = {'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/**/*.{png,storyboard}']}
-  end
+
+  #s.subspec 'SMADResources' do |resources|
+   #   resources.resource_bundle = {'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/**/*.{png,storyboard}']}
+ # end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -11,9 +11,9 @@ import MagicMapper
 import AdSupport
 
 open class SMADInterstitial: NSObject {
-    
+
     open var delegate: SMADInterstitialDelegate?
-    
+
     public func load(_ request: SMADRequest) {
         //Code
         var params = request.baseParam
@@ -32,7 +32,7 @@ open class SMADInterstitial: NSObject {
             self.delegate?.interstitial(self, didFailToReceiveAdWithError: error)
         }
     }
-    
+
     public func load(_ request: SMADRequest, completionHandler :@escaping () -> Void, faillureHandler: @escaping () -> Void) {
            //Code
            var params = request.baseParam
@@ -53,7 +53,7 @@ open class SMADInterstitial: NSObject {
                 faillureHandler()
            }
        }
-    
+
     public func present(fromRootViewController rootViewController: UIViewController) {
         //Code
         guard let response = self.responseInfo else { return }
@@ -62,22 +62,22 @@ open class SMADInterstitial: NSObject {
              let intersitialViewController =  storyboard.instantiateViewController(withIdentifier: "SMADIntersitialViewController") as! SMADIntersitialViewController
              intersitialViewController.modalPresentationStyle = .overCurrentContext
              intersitialViewController.hidesBottomBarWhenPushed = true
-             
+
              //Pass data
              intersitialViewController.model = response
              intersitialViewController.delegate = self.delegate
              rootViewController.present(intersitialViewController, animated: false, completion: nil)
         }
     }
-    
+
     public var isReady: Bool = false
-    
+
     public var hasBeenUsed: Bool = false
-    
+
     public var responseInfo: SMADResponseInfo?
-    
+
     private func setResponseInfo(_ response: SMADResponseInfo) {
         self.responseInfo = response
     }
-    
+
 }
