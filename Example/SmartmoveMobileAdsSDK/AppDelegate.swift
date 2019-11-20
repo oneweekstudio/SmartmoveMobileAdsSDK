@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        SMADMobileAds.config(false)
-        print("Run config : \(SMADMobileAds.isDebug)")
+        SMADMobileAds.shared.enableDebug(true)
         return true
     }
 

@@ -23,7 +23,15 @@ open class SMADNative : NSObject {
         var params = request.baseParam
         params.updateValue("1", forKey: "number")
         params.updateValue("random", forKey: "option")
-        request.urlRequest = SMADMobileAds.kSMADGetCampaign
+        
+        if SMADMobileAds.shared.isDebug {
+            log.debug("SanboxMode: SMADNative load...")
+            request.urlRequest = SMADMobileAds.kSMADGetCampaignSanbox
+        } else {
+            log.debug("ProductionMode: SMADNative load...")
+            request.urlRequest = SMADMobileAds.kSMADGetCampaign
+        }
+        
         request.load(completionHandler: { (json) in
             //Get json
             if let data = json as? KeyValue {
@@ -41,7 +49,15 @@ open class SMADNative : NSObject {
         var params = request.baseParam
         params.updateValue("1", forKey: "number")
         params.updateValue("random", forKey: "option")
-        request.urlRequest = SMADMobileAds.kSMADGetCampaign
+        
+        if SMADMobileAds.shared.isDebug {
+            log.debug("SanboxMode: SMADNative load...")
+            request.urlRequest = SMADMobileAds.kSMADGetCampaignSanbox
+        } else {
+            log.debug("ProductionMode: SMADNative load...")
+            request.urlRequest = SMADMobileAds.kSMADGetCampaign
+        }
+        
         request.load(completionHandler: { (json) in
             //Get json
             if let data = json as? KeyValue {
@@ -52,7 +68,6 @@ open class SMADNative : NSObject {
             }
         }) { (error) in
             //Error
-            //            self.delegate?.interstitial(self, didFailToReceiveAdWithError: error)
             faillureHandler()
         }
     }
