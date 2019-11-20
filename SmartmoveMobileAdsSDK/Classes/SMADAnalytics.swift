@@ -43,7 +43,16 @@ public class SMADAnalytics : SMADRequest {
 //        log.debug("Campaign_id: \(campaign_id)")
 //        log.debug("Size: \(size)")
 //        log.debug("==============")
-        self.request(url: SMADMobileAds.kSMADUrlViewAd, campaign_id: campaign_id, size: size)
+        if SMADMobileAds.shared.isDebug {
+            //Sanbox
+            log.debug("SanboxMode: requestViewAd ...")
+            self.request(url: SMADMobileAds.kSMADUrlViewAdSanbox, campaign_id: campaign_id, size: size)
+        } else {
+            //Production
+             log.debug("ProductionMode: requestViewAd ...")
+            self.request(url: SMADMobileAds.kSMADUrlViewAd, campaign_id: campaign_id, size: size)
+
+        }
     }
     
     public func requestClickAd(campaign_id: Int, size:String)  {
@@ -52,7 +61,16 @@ public class SMADAnalytics : SMADRequest {
 //        log.debug("Campaign_id: \(campaign_id)")
 //        log.debug("Size: \(size)")
 //        log.debug("==============")
-        self.request(url: SMADMobileAds.kSMADUrlClickAd, campaign_id: campaign_id, size: size)
+        if SMADMobileAds.shared.isDebug {
+            //Sanbox
+            log.debug("SanboxMode: requestClickAd ...")
+            self.request(url: SMADMobileAds.kSMADUrlClickAdSanbox, campaign_id: campaign_id, size: size)
+        } else {
+            //Production
+            log.debug("ProductionMode: requestClickAd ...")
+            self.request(url: SMADMobileAds.kSMADUrlClickAd, campaign_id: campaign_id, size: size)
+
+        }
     }
     
 }
