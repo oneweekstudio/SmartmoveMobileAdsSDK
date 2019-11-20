@@ -30,9 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'SmartmoveMobileAdsSDK/Classes/**/*'
+  s.source_files = 'SmartmoveMobileAdsSDK/Classes/*'
 
-  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/**/*.png' }
+  s.ios.resource_bundle = { 'SmartmoveMobileAdsSDK' => 'Assets/*' }
 
   # s.resource_bundles = {
   #    'SmartmoveMobileAdsSDK' => ['SmartmoveMobileAdsSDK/Assets/*']
