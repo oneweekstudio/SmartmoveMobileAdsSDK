@@ -1,6 +1,6 @@
 {
   "name": "SmartmoveMobileAdsSDK",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "summary": "A short description of SmartmoveMobileAdsSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/oneweekstudio/SmartmoveMobileAdsSDK",
@@ -13,15 +13,15 @@
   },
   "source": {
     "git": "https://github.com/oneweekstudio/SmartmoveMobileAdsSDK.git",
-    "tag": "2.0.0"
+    "tag": "2.0.2"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "SmartmoveMobileAdsSDK/**/*",
+  "source_files": "SmartmoveMobileAdsSDK/Classes/**/*",
   "ios": {
     "resource_bundles": {
-      "SmartmoveMobileAdsSDK": "Assets/**/*.xcassets"
+      "SmartmoveMobileAdsSDK": "Assets/**/*.png"
     },
     "dependencies": {
       "Alamofire": [
@@ -45,15 +45,5 @@
     "SwiftyBeaver": [
 
     ]
-  },
-  "subspecs": [
-    {
-      "name": "SMADResources",
-      "resource_bundles": {
-        "SmartmoveMobileAdsSDK": [
-          "SmartmoveMobileAdsSDK/**/*.{png,storyboard}"
-        ]
-      }
-    }
-  ]
+  }
 }

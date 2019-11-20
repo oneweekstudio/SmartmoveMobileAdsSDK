@@ -5,13 +5,7 @@ PODS:
   - SDWebImage (5.3.1):
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
-  - SmartmoveMobileAdsSDK (2.0.0):
-    - Alamofire (~> 5.0.0-rc.3)
-    - MagicMapper (~> 1.0.2)
-    - SDWebImage
-    - SmartmoveMobileAdsSDK/SMADResources (= 2.0.0)
-    - SwiftyBeaver
-  - SmartmoveMobileAdsSDK/SMADResources (2.0.0):
+  - SmartmoveMobileAdsSDK (2.0.2):
     - Alamofire (~> 5.0.0-rc.3)
     - MagicMapper (~> 1.0.2)
     - SDWebImage
@@ -39,7 +33,7 @@ SPEC CHECKSUMS:
   MagicMapper: 1909d0e15b7a3ef7faec2c5e30791eed0815e934
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
-  SmartmoveMobileAdsSDK: af005a45b9472b9f3613b07f3edb3683148a5e4f
+  SmartmoveMobileAdsSDK: 7454a266b1cd675994e271ca65951cc20ddc0d01
   SwiftyBeaver: 3d3e93a12d648bd400b6f2948a7ef128b5b183c7
 
 PODFILE CHECKSUM: 093e4b93927ecc743d9cd2d4fda6efd19bc54d1e
