@@ -50,9 +50,14 @@ public class SMADNativeViewController : UIViewController {
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.webView.removeFromSuperview()
+//        self.webView.removeFromSuperview()
 //        self.webView.can
     }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+           super.viewWillDisappear(animated)
+           self.webView.removeFromSuperview()
+       }
 }
 
 
