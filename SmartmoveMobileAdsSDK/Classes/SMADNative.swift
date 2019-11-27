@@ -23,6 +23,7 @@ open class SMADNative : NSObject {
         var params = request.baseParam
         params.updateValue("1", forKey: "number")
         params.updateValue("random", forKey: "option")
+        params.updateValue("format", forKey: "native")
         
         if SMADMobileAds.shared.isDebug {
             log.debug("SanboxMode: SMADNative load...")
@@ -47,9 +48,10 @@ open class SMADNative : NSObject {
     public func load(_ request: SMADRequest, completionHandler :@escaping () -> Void, faillureHandler: @escaping () -> Void) {
         //Code
         var params = request.baseParam
-        params.updateValue("1", forKey: "number")
+        params.updateValue("2", forKey: "number")
         params.updateValue("random", forKey: "option")
-        
+        params.updateValue("format", forKey: "native")
+
         if SMADMobileAds.shared.isDebug {
             log.debug("SanboxMode: SMADNative load...")
             request.urlRequest = SMADMobileAds.kSMADGetCampaignSanbox

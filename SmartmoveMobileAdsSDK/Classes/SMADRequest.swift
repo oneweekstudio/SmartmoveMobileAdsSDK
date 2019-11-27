@@ -72,6 +72,7 @@ open class SMADRequest: NSObject {
             .responseJSON {response in
                 switch (response.result){
                 case.success(let data):
+                    log.debug("--> \(data)")
                     completionHandler?(data)
                     break
                 case .failure(let error):
