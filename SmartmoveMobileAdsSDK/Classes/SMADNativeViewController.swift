@@ -35,6 +35,7 @@ public class SMADNativeViewController : UIViewController {
         log.debug("UIApplicationDidEnterBackground: -> Ẩn controller xử lý deeplink ")
         log.debug("Đóng SMADNativeViewController")
         self.timer?.invalidate()
+        self.timer = nil
         self.dismiss(animated: false, completion: {
             NotificationCenter.default.post(name: NSNotification.Name.init("DidfinshLoad"), object: nil)
         })
@@ -57,6 +58,8 @@ public class SMADNativeViewController : UIViewController {
     public override func viewWillDisappear(_ animated: Bool) {
            super.viewWillDisappear(animated)
            self.webView.removeFromSuperview()
+           self.timer?.invalidate()
+           self.timer = nil
        }
 }
 
@@ -111,6 +114,7 @@ extension SMADNativeViewController : UIWebViewDelegate {
         self.lblTitle?.text = "Remaining \(self.countdown)"
         if countdown == 0 {
             self.timer?.invalidate()
+            self.timer = nil
             self.countdown = 1
 //            SMADCommon.shared.showError(rootViewController: self, message: "Deep link chưa được sử dụng") {
                 self.willResignActive()
