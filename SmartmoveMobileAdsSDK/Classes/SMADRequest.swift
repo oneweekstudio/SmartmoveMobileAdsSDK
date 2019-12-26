@@ -50,7 +50,7 @@ open class SMADRequest: NSObject {
             device_type = "iphone"
         }
         
-        bundleID = Bundle.main.bundleIdentifier!
+        bundleID = "com.harry.ScanningApp1"
 //        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
         baseParam = ["package_name":bundleID,
                      "lang":NSLocale.preferredLanguages[0],
@@ -72,11 +72,11 @@ open class SMADRequest: NSObject {
             .responseJSON {response in
                 switch (response.result){
                 case.success(let data):
-                    log.debug("--> \(data)")
+                    print("--> \(data)")
                     completionHandler?(data)
                     break
                 case .failure(let error):
-                    log.debug(error)
+                    print(error)
                     failureHandler?(error)
                     break
                 }
