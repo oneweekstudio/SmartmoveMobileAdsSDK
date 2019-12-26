@@ -12,9 +12,58 @@ import SafariServices
 
 
 /*
-    - Chú ý: Controller này chỉ xử lý deeplink
+ - Chú ý: Controller này chỉ xử lý deeplink
  
  */
+
+class TimerManager : NSObject {
+    
+    static let `default` = TimerManager()
+    
+    var updateBlock: ((String) -> Void)?
+    var finishBlock: (() -> Void)?
+    
+    private var countdown = 5
+    private var timer: Timer? = nil
+    
+    private var isLoaded: Bool = false
+    
+    func stopTimer() {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+    
+    func startTimer() {
+        if isLoaded == false {
+            print("Start timer")
+            DispatchQueue.main.async {
+                self.stopTimer()
+                self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
+            }
+            isLoaded = true
+        }
+        
+    }
+    
+    @objc private func updateCounter() {
+        DispatchQueue.main.async {
+            self.countdown -= 1
+            print("Shot : \(self.countdown)")
+            self.updateBlock?("Remaining \(self.countdown)")
+            if self.countdown <= 0 {
+                self.timer?.invalidate()
+                self.timer = nil
+                self.countdown = 5
+                self.finishBlock?()
+                self.isLoaded = false
+                print("Kill timer")
+            }
+        }
+    }
+    
+}
+
+
 public class SMADNativeViewController : UIViewController {
     
     @IBOutlet weak var lblTitle: UILabel?
@@ -22,20 +71,29 @@ public class SMADNativeViewController : UIViewController {
     
     //Để vào trong thằng này 1 object, test thì để 1 cái string
     var dynamicLink: String?
-    var countdown = 5
-    var timer: Timer?
-
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.load()
+        TimerManager.default.stopTimer()
         NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        TimerManager.default.updateBlock = { [weak self] str in
+            guard let `self` = self else { return }
+            self.lblTitle?.text = str
+        }
+        
+        TimerManager.default.finishBlock = {
+            if self.webView != nil {
+                self.webView.removeFromSuperview()
+            }
+            self.willResignActive()
+        }
     }
     
     @objc func willResignActive() {
-        log.debug("UIApplicationDidEnterBackground: -> Ẩn controller xử lý deeplink ")
-        log.debug("Đóng SMADNativeViewController")
-        self.timer?.invalidate()
-        self.timer = nil
+        print("UIApplicationDidEnterBackground: -> Ẩn controller xử lý deeplink ")
+        print("Đóng SMADNativeViewController")
+        TimerManager.default.stopTimer()
         self.dismiss(animated: false, completion: {
             NotificationCenter.default.post(name: NSNotification.Name.init("DidfinshLoad"), object: nil)
         })
@@ -47,20 +105,16 @@ public class SMADNativeViewController : UIViewController {
     
     override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-    }
-    
-    public override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        self.webView.removeFromSuperview()
-//        self.webView.can
+        TimerManager.default.stopTimer()
     }
     
     public override func viewWillDisappear(_ animated: Bool) {
-           super.viewWillDisappear(animated)
-           self.webView.removeFromSuperview()
-           self.timer?.invalidate()
-           self.timer = nil
-       }
+        super.viewWillDisappear(animated)
+        if self.webView != nil {
+            self.webView.removeFromSuperview()
+        }
+        TimerManager.default.stopTimer()
+    }
 }
 
 
@@ -69,16 +123,16 @@ extension SMADNativeViewController : SFSafariViewControllerDelegate     {
     
     func load() {
         
-//        if SMADMobileAds.isDebug {
-//            self.dynamicLink = "https://flyingfacev2.page.link/test"
-//        }
+        //        if SMADMobileAds.isDebug {
+        //            self.dynamicLink = "https://flyingfacev2.page.link/test"
+        //        }
         
         guard
             let link = self.dynamicLink,
             let url = URL.init(string: link)
             else { return }
         
-        log.debug("URL: = \(link)")
+        print("URL: = \(link)")
         let urlRequest = URLRequest.init(url: url)
         self.redirectLink(URLRequest: urlRequest)
         
@@ -95,32 +149,17 @@ extension SMADNativeViewController : UIWebViewDelegate {
     
     
     public func webViewDidStartLoad(_ webView: UIWebView) {
-        log.debug("webViewDidStartLoad")
-
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
+        //        print("webViewDidStartLoad")
+        TimerManager.default.startTimer()
     }
     
     public func webViewDidFinishLoad(_ webView: UIWebView) {
-        log.debug("webViewDidFinishLoad")
+        //        print("webViewDidFinishLoad")
     }
     
     public func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        log.debug("didFailLoadWithError: \(error)")
+        //        print("didFailLoadWithError: \(error)")
     }
     
-    @objc func updateCounter() {
-        self.countdown -= 1
-        log.debug("Time left: \(self.countdown)")
-        self.lblTitle?.text = "Remaining \(self.countdown)"
-        if countdown == 0 {
-            self.timer?.invalidate()
-            self.timer = nil
-            self.countdown = 1
-//            SMADCommon.shared.showError(rootViewController: self, message: "Deep link chưa được sử dụng") {
-                self.willResignActive()
-//            }
-        }
-    }
-
 }
 
