@@ -50,7 +50,7 @@ open class SMADRequest: NSObject {
             device_type = "iphone"
         }
         
-        bundleID = "com.harry.ScanningApp1"
+        bundleID = Bundle.main.bundleIdentifier!
 //        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
         baseParam = ["package_name":bundleID,
                      "lang":NSLocale.preferredLanguages[0],
