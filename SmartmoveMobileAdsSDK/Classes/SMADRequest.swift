@@ -27,7 +27,7 @@ open class SMADRequest: NSObject {
     
     private var orientation = ""
     private var device_type = "iphone"
-    private var bundleID:String = "alex.test.packagename"
+    private var bundleID:String = "com.quangpd.rs2" //Test
     
     open  var adFormat: SMADFormat = .full
     
@@ -50,7 +50,7 @@ open class SMADRequest: NSObject {
             device_type = "iphone"
         }
         
-        bundleID = Bundle.main.bundleIdentifier!
+//        bundleID = Bundle.main.bundleIdentifier!
 //        log.debug("Debug mode = \(SMADMobileAds.isDebug) : \(bundleID)")
         baseParam = ["package_name":bundleID,
                      "lang":NSLocale.preferredLanguages[0],

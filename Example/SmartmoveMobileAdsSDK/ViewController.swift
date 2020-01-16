@@ -104,10 +104,21 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
         let request = SMADRequest()
         smadNative.load(request, completionHandler: {
             HUD.hide()
+            
+          
+            
             self.smadNative.showDialog(fromRootViewController: self) { (success) in
+                
             }
+            
+ 
+            
         }) {
             HUD.hide()
+        }
+        
+        self.smadNative.nativeDidCloseBlock = {
+                       print("--->Close ads")
         }
     }
     

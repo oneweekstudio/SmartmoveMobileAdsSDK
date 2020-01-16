@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartmoveMobileAdsSDK'
-  s.version          = '2.1.0'
+  s.version          = '2.1.2'
   s.summary          = 'A short description of SmartmoveMobileAdsSDK.'
 
 # This description is used to generate tags and improve search results.
