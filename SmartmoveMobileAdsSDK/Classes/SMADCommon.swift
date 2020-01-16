@@ -57,13 +57,17 @@ public class SMADCommon : NSObject {
     
     
     //Khi link nhận được từ campaign là một link dạng "dynamic link" -> Chuyển đến controller SMNativeController để xử lý deeplink
-    public func openDeepLink( from controller: UIViewController, link: String = "https://flyingfacev2.page.link/test", nativeDidCloseBlock: (() -> Void)? = nil) {
+    public func openDeepLink( from controller: UIViewController,
+                              link: String = "https://flyingfacev2.page.link/test",
+                              nativeDidCloseBlock: (() -> Void)? = nil) {
+        
         let nativeViewController = UIStoryboard.init(name: "SMADNative", bundle: getBundlePath()).instantiateViewController(withIdentifier: "SMADNativeViewController") as! SMADNativeViewController
         nativeViewController.modalPresentationStyle = .overCurrentContext
         nativeViewController.dynamicLink = link
         nativeViewController.nativeDidCloseBlock = {
             nativeDidCloseBlock?()
         }
+        
         controller.present( nativeViewController, animated: false)
     }
     
