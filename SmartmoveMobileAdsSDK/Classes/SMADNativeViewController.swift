@@ -72,6 +72,8 @@ public class SMADNativeViewController : UIViewController {
     //Để vào trong thằng này 1 object, test thì để 1 cái string
     var dynamicLink: String?
     
+    var nativeDidCloseBlock: (() -> Void)?
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.load()
@@ -96,6 +98,7 @@ public class SMADNativeViewController : UIViewController {
         print("UIApplicationDidEnterBackground: -> Ẩn controller xử lý deeplink ")
         print("Đóng SMADNativeViewController")
         TimerManager.default.stopTimer()
+        nativeDidCloseBlock?()
         self.dismiss(animated: false, completion: {
             
             NotificationCenter.default.post(name: NSNotification.Name.init("DidfinshLoad"), object: nil)
