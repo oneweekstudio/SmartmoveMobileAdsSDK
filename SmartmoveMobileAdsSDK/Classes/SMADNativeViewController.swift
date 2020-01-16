@@ -73,9 +73,12 @@ public class SMADNativeViewController : UIViewController {
     var dynamicLink: String?
     
     var nativeDidCloseBlock: (() -> Void)?
+    var nativeLoadBlock: (() -> Void)?
+
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.nativeLoadBlock?()
         self.load()
         TimerManager.default.stopTimer()
         NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)

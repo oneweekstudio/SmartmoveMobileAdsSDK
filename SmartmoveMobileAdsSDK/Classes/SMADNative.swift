@@ -15,7 +15,8 @@ open class SMADNative : NSObject {
     private var smadAnalytics:SMADAnalytics?
     
     public var nativeDidCloseBlock: (() -> Void)?
-    
+    public var nativeLoadBlock: (() -> Void)?
+
     public override init() {
         super.init()
     }
@@ -164,7 +165,8 @@ open class SMADNative : NSObject {
             log.debug("Deep link: \(asset.link)")
             SMADCommon.shared.openDeepLink(from: rootViewController,
                                            link: asset.link,
-                                           nativeDidCloseBlock: nativeDidCloseBlock)
+                                           nativeDidCloseBlock: nativeDidCloseBlock,
+                                           nativeLoadBlock: nativeLoadBlock)
             break
         case .itune :
             log.debug("Appstore link: \(asset.link)")
