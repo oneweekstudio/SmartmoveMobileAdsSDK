@@ -42,7 +42,7 @@ public class SMADMobileAds : NSObject {
     //Sử dụng hàm này để gọi debug mode
     public func enableDebug(_ isDebug:Bool = false) {
         let console = ConsoleDestination()
-        log.addDestination(console)
+        //log.addDestination(console)
         SMADMobileAds.shared.isDebug = isDebug
         print("SMADMobileAdsSDK - SanboxMode : \(SMADMobileAds.shared.isDebug)")
     }

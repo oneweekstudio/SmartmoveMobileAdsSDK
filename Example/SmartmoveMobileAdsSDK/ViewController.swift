@@ -109,6 +109,10 @@ class ViewController: UIViewController, SMADInterstitialDelegate {
         }) {
             HUD.hide()
         }
+        
+        smadNative.nativeLoadBlock = {
+            print("Native didload")
+        }
     }
     
     func load() {

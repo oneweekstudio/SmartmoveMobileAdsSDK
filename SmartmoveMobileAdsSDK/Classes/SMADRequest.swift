@@ -27,7 +27,7 @@ open class SMADRequest: NSObject {
     
     private var orientation = ""
     private var device_type = "iphone"
-    private var bundleID:String = "alex.test.packagename"
+    private var bundleID:String = "com.quangpd.rs2"
     
     open  var adFormat: SMADFormat = .full
     
